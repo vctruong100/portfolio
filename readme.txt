@@ -10,39 +10,48 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
-*/13
-- */1 Readme
-- */2 Basic HTML content
-- */2 Basic CSS styling
-- */2 Advanced feature
-- */3 Responsive layout
-- */1 Passes validation checks
-- */2 Embraces spirit of the assignment
+11/13
+- 1/1 Readme
+- 2/2 Basic HTML content
+- 2/2 Basic CSS styling
+- 2/2 Advanced feature
+- 3/3 Responsive layout
+- 0/1 Passes validation checks
+- 1/2 Embraces spirit of the assignment
 
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
 (a) Basic features
-
-
+- External link to the LinkedIn.
+- Link to different portfolio pages.
+- Image on each page.
+- Headings for each section.
+- Two pages portfolio.
+- Footer that contains contact information and an email link.
 
 (b) CSS features
-
-
+- Styling text, background, and layout, including font styles, colors, and box shadows.
+- Styling for images and video.
+- Styling for different sections like headers and footers.
+- Hover effects on navigation links and project links.
+- Dropdown menu in the navigation bar for flexibility in case of future projects.
 
 (c) Advanced features
-
-
+- Navigation bar and footer
+- Embedding of a video in the project page.
+- Direct email link in the footer for easy contact
 
 3. How long, in hours, did it take you to complete this assignment?
-
-
+- This project took me a minimum of 13 hours.
 
 4. What online resources did you consult when completing this assignment? (list specific URLs)
-
-
+- https://achecks.org/checker/index.php#output_div
+- https://wave.webaim.org/
+- https://chat.openai.com/
+- https://inf133.markbaldw.in/resources.html
 
 5. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
-
-
+- Jaylen Luc and Neal Lowry: We mainly talked about what frameworks to use and compare our progress on completion.
 
 6. Is there anything special we need to know in order to run your code?
+- Images and video is inside the project directory in the folder "pictures."
