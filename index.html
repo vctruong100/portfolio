@@ -5,45 +5,56 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Vinh Truong</h1>
-    </header>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Projects</a>
+                <a href="project1.html" class="dropbtn">Projects</a>
                 <div class="dropdown-content">
-                    <a href="project1.html">Project 1</a>
-                    <a href="project2.html">Project 2</a>
+                    <a href="project1.html">USA Fun Map</a>
                 </div>
             </li>
+            <li><a href="https://www.linkedin.com/in/vinh-truong-224b93279/" target="_blank">LinkedIn</a></li>
         </ul>
-    </nav>
+    </nav>    
+    <section class="home-section">
+        <div class="profile-container">
+            <div class="profile-frame">
+                <img src="pictures/profilepicfrom2020.png" alt="Vinh Truong" class="profile-pic">
+            </div>
+            <h2>Vinh Truong</h2>
+            <p class="tagline">Third Year Informatics Major</p>
+        </div>
+    </section>
     <main>
+        
         <section class="intro">
-            <h2>About Me</h2>
-            <p>[intro].</p>
+            <div class="about-me-container">
+                <div class="about-me-text">
+                    <h2 class="section-heading">About Me</h2>
+                    <p class="paragraph-style">Hello! I'm Vinh Truong, a passionate and dedicated 3rd year Informatics Major with a keen interest in UX/UI design. 
+                    My journey in the field of design is driven by a desire to create user-centric and aesthetically pleasing digital experiences. 
+                    With a strong foundation in informatics, I am constantly exploring new trends and expanding my knowledge in design and user experience. 
+                    I am excited to keep pushing the boundaries of digital design and create solutions that not only look great but also provide a seamless and enjoyable user experience.</p>
+                </div>
+            </div>
         </section>
-        <section class="projects">
-            <article>
-                <img src="project1.jpg" alt="Project 1">
+        
+        <section class="projects-section">
+            <h2 class="section-heading">Projects</h2>
+            <article class="project-article">
+                <img src="pictures/usafunmap.png" alt="Interactive News Map" class="project-image">
                 <div class="project-info">
-                    <h3>Project 1 Title</h3>
-                    <p>Summary of Project 1.</p>
-                </div>
-            </article>
-            <article>
-                <img src="project2.jpg" alt="Project 2">
-                <div class="project-info">
-                    <h3>Project 2 Title</h3>
-                    <p>Summary of Project 2.</p>
-                </div>
+                    <h3><a href="project1.html" class="project-link">Interactive News Map: USA Fun Map</a></h3>
+                    <p>The USA Fun Map is a user interactive map serves to acquire knowledge about global affairs. 
+                        The initial objective was to create a global size interactive map to deliver news content, but due to time constraints, the project
+                        was limited to a single country, United States.</p>
+                </div>  
             </article>
         </section>
     </main>
     <footer>
-        <p>Contact me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>Contact me: <a href="mailto:vctruong100@gmail.com" class="footer-email">vctruong100@example.com</a></p>
     </footer>
 </body>
 </html>
