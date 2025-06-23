@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fablix Movie DB Case Study | Vinh Truong</title>
+  <link rel="stylesheet" href="fablix.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="cs-header">
+    <nav class="cs-nav container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="p1.html">ICS Scheduling</a></li>
+        <li><a href="p2.html">Game-On</a></li>
+        <li><a href="p3.html">Fablix Project</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html" class="btn">Get in Touch</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO / TITLE -->
+  <section class="cs-hero">
+    <div class="container">
+      <h1>Fablix Movie DB Web App</h1>
+      <p class="cs-meta">Oct 24, 2024 • Java • MySQL • Tomcat • REST APIs • jQuery • AWS</p>
+      <p class="cs-subtitle">
+        A full-stack movie database with secure login, full-text search, and auto-complete—optimized on AWS for thousands of titles.
+        Github: https://github.com/vctruong100/fablixmovie
+    </p>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="cs-section cs-overview">
+    <div class="container">
+      <h2>Overview</h2>
+      <p>
+        Developed as a course project to demonstrate secure login flows, full-text search, and performance optimization in a dynamic web application.</p>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="cs-section cs-problem">
+    <div class="container">
+      <h2>Problem</h2>
+      <p>
+        Users needed a secure, responsive way to search and browse a large movie dataset with filtering and fast search feedback.
+      </p>
+    </div>
+  </section>
+
+  <!-- ROLE & DELIVERABLES -->
+  <section class="cs-section cs-details">
+    <div class="container cs-details__grid">
+      <div>
+        <h3>My Role</h3>
+        <ul>
+          <li>Full-stack Developer</li>
+          <li>Deployed AWS EC2/Tomcat &amp; RDS MySQL</li>
+          <li>Implemented SHA-256 encryption &amp; session management</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Key Deliverables</h3>
+        <ul>
+          <li>Secure login &amp; role-based access control</li>
+          <li>Full-text search with auto-complete</li>
+          <li>High-performance indexing (>10k records)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- UI GALLERY -->
+  <section class="cs-section cs-pages">
+    <div class="container">
+      <h2>Page Breakdown</h2>
+      <div class="cs-pages__grid">
+        <div class="cs-page">
+          <img src="pictures/fablix.png" alt="Login Page">
+          <div class="cs-page-text">
+            <h3>Login Page</h3>
+            <p>The login form features labeled inputs, client-side validation, and an inline reCAPTCHA to prevent bots. Focus states highlight fields, and error messages appear beneath inputs on invalid submissions.</p>
+          </div>
+        </div>
+        <div class="cs-page">
+          <img src="pictures/fabhome.png" alt="Home/Search Page">
+          <div class="cs-page-text">
+            <h3>Home/Search Page</h3>
+            <p>Users can filter movies by title, year, director, or star. The persistent nav bar stays in view, and AJAX-powered genre/letter lists load instantly—no full-page reload required.</p>
+          </div>
+        </div>
+        <div class="cs-page">
+        <img src="pictures/fabmovielist.png" alt="Movie List Page">
+        <div class="cs-page-text">
+            <h3>Movie List Page</h3>
+            <p>This page displays results from the search or category queries. Users can sort movies by title and rating in ascending or descending order, control pagination, and select how many results to display per page.</p>
+        </div>
+        </div>
+
+        <div class="cs-page">
+        <img src="pictures/fabmoviedetails.png" alt="Movie Details Page">
+        <div class="cs-page-text">
+            <h3>Movie Details Page</h3>
+            <p>Displays detailed metadata about the selected film including year, director, rating, genres, and associated stars. Includes an "Add to Cart" button and a smooth navigation experience back to search results.</p>
+        </div>
+        </div>
+
+        <div class="cs-page">
+        <img src="pictures/shoppingcart.png" alt="Shopping Cart Page">
+        <div class="cs-page-text">
+            <h3>Shopping Cart Page</h3>
+            <p>Users can view their selected movies, update quantities, or remove items. The total cost is dynamically calculated. A clear “Proceed to Payment” button directs users to finalize their purchase.</p>
+        </div>
+        </div>
+
+        <div class="cs-page">
+        <img src="pictures/payment.png" alt="Payment Page">
+        <div class="cs-page-text">
+            <h3>Payment Page</h3>
+            <p>Provides a clean form for entering billing details including name, credit card, and expiration date. Data is securely validated before submission, and errors are handled with clear feedback.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LESSONS & NEXT STEPS -->
+  <section class="cs-section cs-lessons">
+    <div class="container">
+      <h2>Lessons &amp; Next Steps</h2>
+      <ul>
+        <li>Optimized indexing reduced average search time from 250ms to 80ms.</li>
+        <li>Planned to integrate Elasticsearch for advanced filtering.</li>
+        <li>Next phase: mobile-responsive redesign &amp; containerized deployment with Docker.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="cs-footer">
+    <div class="container">
+      <p>&copy; 2025 Vinh Chieu Truong</p>
+    </div>
+  </footer>
+
+</body>
+</html>

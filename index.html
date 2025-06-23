@@ -1,59 +1,177 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vinh Chieu Truong | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <!-- Dropdown Menu for Projects -->
-            <li class="dropdown">
-                <a href="project1.html" class="dropbtn">Projects</a>
-                <div class="dropdown-content">
-                    <a href="project1.html">USA Fun Map</a>
-                </div>
-            </li>
-            <li><a href="https://www.linkedin.com/in/vinh-truong-224b93279/" target="_blank">LinkedIn</a></li>
+
+  <!-- HEADER / NAV -->
+  <header class="header">
+    <div class="container header__inner">
+      <nav>
+        <ul class="nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="scheduling.html">ICS Scheduling</a></li>
+          <li><a href="game-on.html">Game-On</a></li>
+          <li><a href="fablixmovie.html">Fablix Project</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-    </nav>    
-    <!-- Home Section with Profile Information -->
-    <section class="home-section">
-        <div class="profile-container">
-            <div class="profile-frame">
-                <img src="pictures/profilepicfrom2020.png" alt="Vinh Truong" class="profile-pic">
-            </div>
-            <h2>Vinh Truong</h2>
-            <p class="tagline">Third Year Informatics Major</p>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="profile">
+        <img src="pictures/profilepicfrom2020.png" alt="Vinh Chieu Truong" class="profile__pic">
+      </div>
+      <h1 class="hero__title">Vinh Chieu Truong</h1>
+      <p class="hero__tagline">
+        I’m a recent informatics B.S. graduate from UC Irvine, passionate about Human-Computer Interaction (HCI), accessibility, and user-centered design. I’ve worked on a variety of technical projects involving front-end and back-end development, and I’m actively seeking opportunities to grow my skills in design, development, and information systems.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <!-- ICS Scheduler -->
+      <div id="ics" class="project-card">
+        <div class="project-content">
+          <h2 class="project-title">ICS Scheduler</h2>
+          <p class="project-role">Role: Full Stack Developer</p>
+          <ul class="project-bullets">
+            <li>Produced requirements with two sponsor stakeholders</li>
+            <li>Prototyped calendar interactions in Figma and code in TypeScript</li>
+            <li>Developed RESTful Node.js/Express APIs backed by MongoDB Atlas to manage courses, user roles, classrooms, modules, and messaging</li>
+          </ul>
+          <a href="project1.html" class="btn btn--secondary">View Project</a>
         </div>
-    </section>
-    <main>
-        <!-- Introduction Section with About Me Information -->
-        <section class="intro">
-            <div class="about-me-container">
-                <div class="about-me-text">
-                    <h2 class="section-heading">About Me</h2>
-                    <p class="paragraph-style">Hello! I'm Vinh Truong, a passionate and dedicated 3rd year Informatics Major...</p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Projects Section -->
-        <section class="projects-section">
-            <h2 class="section-heading">Projects</h2>
-            <article class="project-article">
-                <img src="pictures/usafunmap.png" alt="Interactive News Map" class="project-image">
-                <div class="project-info">
-                    <h3><a href="project1.html" class="project-link">Interactive News Map: USA Fun Map</a></h3>
-                    <p>The USA Fun Map is a user interactive map...</p>
-                </div>  
-            </article>
-        </section>
-    </main>
-    <footer>
-        <p>Contact me: <a href="mailto:vctruong100@gmail.com" class="footer-email">vctruong100@example.com</a></p>
-    </footer>
+        <div class="project-media">
+          <img src="pictures/icsscheduling.png" alt="ICS Scheduler screenshot">
+          <p class="project-tech">Next.js • MongoDB • 22 weeks</p>
+        </div>
+      </div>
+
+      <!-- Game-On -->
+      <div id="gameon" class="project-card">
+        <div class="project-content">
+          <h2 class="project-title">Game-On — Sports Buddy App</h2>
+          <p class="project-role">Role: Lead Product Designer &amp; Front-End Developer</p>
+          <ul class="project-bullets">
+            <li>Rapid low-fi mockups + prototype in Figma; validated via first-click test</li>
+            <li>High-fi React Native with Expo; built design system (color-blind-safe palette)</li>
+            <li>Designed interactive UI components for filtering users, top navigation bar menu, and core features such as user authentication, forum-style threads, and profile management</li>
+          </ul>
+          <a href="project2.html" class="btn btn--secondary">View Project</a>
+        </div>
+        <div class="project-media">
+          <img src="pictures/gameon.png" alt="Game-On screenshot">
+          <p class="project-tech">React Native • TypeScript • 5-person team • 12 weeks</p>
+        </div>
+      </div>
+
+      <!-- Fablix Movie DB -->
+      <div id="fablix" class="project-card">
+        <div class="project-content">
+          <h2 class="project-title">Fablix Movie DB Web App</h2>
+          <p class="project-role">Role: Full Stack Developer</p>
+          <ul class="project-bullets">
+            <li>Developed a full-stack movie database with secure login, full-text search, and auto-complete</li>
+            <li>Set up AWS instances, MySQL, and Tomcat, optimizing performance for handling thousands of movies</li>
+            <li>Implemented SHA-256 encryption, session management, and high-performance search indexing</li>
+          </ul>
+          <a href="project3.html" class="btn btn--secondary">View Project</a>
+        </div>
+        <div class="project-media">
+          <img src="pictures/fablix.png" alt="Fablix screenshot">
+          <p class="project-tech">Java • MySQL • Tomcat • REST APIs • jQuery • AWS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAGLINE SECTION -->
+  <section class="tagline">
+    <div class="container tagline__inner">
+      <p class="tagline-text">
+        Aspiring <span class="pill">UX/UI Designer</span> with a background in
+        <span class="pill">Informatics</span> at UC Irvine. Currently exploring
+        <span class="pill">React and design systems</span> to build accessible,
+        user-centered products. Passionate about blending design and code to create clean, intuitive experiences.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span class="pill">UX Design</span>
+        <span class="pill">UI Design</span>
+        <span class="pill">Product Design</span>
+        <span class="pill">Back-end Development</span>
+        <span class="pill">Design Systems</span>
+        <span class="pill">Front-End Development</span>
+        <span class="pill">Workshops</span>
+        <span class="pill">Design Sprint</span>
+        <span class="pill">Interaction Design</span>
+        <span class="pill">User Testing</span>
+        <span class="pill">Usability Testing</span>
+        <span class="pill">UX Research</span>
+        <span class="pill">Leadership</span>
+        <span class="pill">Customer Service</span>
+        <span class="pill">Communication</span>
+        <span class="pill">Problem-solving</span>
+        <span class="pill">Fast-paced work adaptation</span>
+        <span class="pill">HTML/CSS</span>
+        <span class="pill">JavaScript</span>
+        <span class="pill">English</span>
+        <span class="pill">Vietnamese</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-list">
+        <div class="experience-item">
+          <div class="role">Full Stack Developer</div>
+          <div class="company">UC Irvine</div>
+          <div class="dates">Sept 2024 – March 2025</div>
+        </div>
+        <div class="experience-item">
+          <div class="role">Team Member</div>
+          <div class="company">McDonald's</div>
+          <div class="dates">June 2022 – July 2023</div>
+        </div>
+        <div class="experience-item">
+          <div class="role">Team Member</div>
+          <div class="company">Fruitea Boba</div>
+          <div class="dates">March 2025 – Current</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer-right">
+        <a href="https://www.linkedin.com/in/vinh-truong-224b93279/" target="_blank">LinkedIn</a>
+        <a href="mailto:vctruong100@gmail.com">Mail</a>
+        <a href="https://github/vctruong100.com">Github</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
