@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://vctruong100.github.io/portfolio/projects/tampermonkey-automator/">
+  <title>Tampermonkey Automator — Vinh Truong</title>
+  <meta name="description" content="A suite of Tampermonkey userscripts automating repetitive clinical data-entry workflows including form filling, barcode scanning, and multi-step navigation.">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Tampermonkey Automator — Case Study">
+  <meta property="og:description" content="Browser-based automation scripts for clinical trial data entry platforms.">
+  <meta property="og:image" content="https://vctruong100.github.io/portfolio/assets/images/project-automator-thumb.jpg">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Tampermonkey Automator",
+    "description": "A suite of Tampermonkey userscripts that automate repetitive clinical data-entry workflows.",
+    "programmingLanguage": ["JavaScript"],
+    "runtimePlatform": "Tampermonkey / Greasemonkey",
+    "author": {
+      "@type": "Person",
+      "name": "Vinh Chieu Truong"
+    },
+    "codeRepository": "https://github.com/vctruong100/Automator"
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="../../index.html" class="site-logo" aria-label="Vinh Truong — Home">VT</a>
+      <nav aria-label="Primary navigation">
+        <noscript>
+          <style>.nav-toggle { display: none !important; } .nav-list { position: static !important; transform: none !important; flex-direction: row !important; flex-wrap: wrap !important; box-shadow: none !important; border: none !important; padding: 0 !important; }</style>
+        </noscript>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="primary-nav" class="nav-list" role="list">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../index.html#projects">Projects</a></li>
+          <li><a href="../../index.html#skills">Skills</a></li>
+          <li><a href="../../index.html#about">About</a></li>
+          <li><a href="../../index.html#contact">Contact</a></li>
+          <li>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+              <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../index.html#projects">Projects</a></li>
+        <li><span aria-current="page">Tampermonkey Automator</span></li>
+      </ol>
+    </nav>
+
+    <section class="project-hero container">
+      <h1 class="project-hero__title">Tampermonkey Automator</h1>
+      <div class="project-hero__meta">
+        <span>Role: Solo Developer</span>
+        <span>Timeline: Ongoing (2024–Present)</span>
+        <span>Platform: Browser (Chrome / Firefox / Edge)</span>
+      </div>
+      <p class="project-hero__summary">
+        A collection of Tampermonkey userscripts that automate repetitive data-entry tasks on a clinical trial management platform. The scripts handle multi-step form workflows, barcode scanning integration, batch processing of activity plans, and calculated field automation — turning hours of manual clicking into one-button operations.
+      </p>
+      <div class="project-hero__actions">
+        <a href="https://github.com/vctruong100/Automator" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View Source Code</a>
+        <a href="#" class="btn btn--secondary" aria-disabled="true">Internal Tool (No Public Demo)</a>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">The Problem</h2>
+      <p>
+        Clinical trial platforms require meticulous data entry for every subject visit: vital signs, lab results, eligibility checks, dosing records, and more. Each activity plan can involve dozens of form fields across multiple pages, and a single study day might require processing 20–50 subjects.
+      </p>
+      <ul>
+        <li>Staff spent 3–5 hours daily on repetitive click-through workflows.</li>
+        <li>Manual data entry across multi-page forms introduced transcription errors.</li>
+        <li>Calculated fields (BMI, QTcF, blood pressure averages) had to be computed and entered by hand.</li>
+        <li>Barcode-based sample tracking required switching between the platform and external systems.</li>
+        <li>No built-in batch processing — each subject had to be handled one at a time.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Solution Overview</h2>
+      <div class="detail-grid">
+        <div class="detail-card">
+          <h3 class="detail-card__title">Core Automation Engine</h3>
+          <ul>
+            <li>Floating control panel with start/pause/stop controls</li>
+            <li>State machine persisted across page reloads via localStorage</li>
+            <li>Configurable delays between actions for platform stability</li>
+            <li>Activity log panel showing real-time progress and errors</li>
+            <li>Draggable, collapsible UI with scalable dimensions</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Form Automation</h3>
+          <ul>
+            <li>Automatic field population from collected data</li>
+            <li>Multi-step navigation: open form, fill fields, save, return</li>
+            <li>Handles dynamic form elements loaded via AJAX</li>
+            <li>Calculated fields: averages, medians, differences, BMI, QTcF</li>
+            <li>Protocol-specific edit checks and validation triggers</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Barcode Integration</h3>
+          <ul>
+            <li>Subject identification via barcode scan input</li>
+            <li>Automatic subject lookup and context switching</li>
+            <li>Sample tracking with accession number generation</li>
+            <li>Informed consent barcode verification workflow</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Method Library</h3>
+          <ul>
+            <li>65+ documented calculation methods for clinical data</li>
+            <li>Methods for vitals, ECG, lab panels, and dosing checks</li>
+            <li>Reusable across different study protocols</li>
+            <li>Markdown documentation for each method's logic</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Tech Stack</h2>
+      <div class="tech-stack">
+        <span class="tag">JavaScript (ES5/ES6)</span>
+        <span class="tag">Tampermonkey</span>
+        <span class="tag">DOM Manipulation</span>
+        <span class="tag">localStorage</span>
+        <span class="tag">MutationObserver</span>
+        <span class="tag">GM_* APIs</span>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Screenshots</h2>
+      <div class="project-gallery">
+        <figure class="project-gallery__item">
+          <img src="../../pictures/tampermonkey/ClinSparkAutomatorpanel.png" alt="Floating control panel overlaying the clinical platform with a list of feature buttons" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Floating control panel with activity log</figcaption>
+        </figure>
+        <figure class="project-gallery__item">
+          <img src="../../pictures/tampermonkey/ClinSparkAutomator1.png" alt="Automator processing an activity plan form, showing field population in progress" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Importing Eligibility Mapping</figcaption>
+        </figure>
+        <figure class="project-gallery__item">
+          <img src="../../pictures/tampermonkey/methodlibrary.png" alt="Method library documentation showing a BMI calculation method with code snippet" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Method library</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Challenges &amp; Solutions</h2>
+      <ul>
+        <li><strong>Page reload persistence:</strong> The clinical platform uses full-page navigation for many actions. I built a localStorage-based state machine that survives reloads and resumes automation at the correct step.</li>
+        <li><strong>Dynamic DOM elements:</strong> Forms are loaded asynchronously via AJAX. The scripts use MutationObserver patterns and configurable retry delays to wait for elements before interacting.</li>
+        <li><strong>Platform updates:</strong> The target platform updates its UI periodically. Using semantic selectors (labels, data attributes) rather than fragile CSS class paths improved resilience.</li>
+        <li><strong>Error recovery:</strong> Network timeouts and unexpected modal dialogs required a pause-and-retry mechanism with clear user feedback through the log panel.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Outcomes &amp; Impact</h2>
+      <ul>
+        <li>Reduced daily data-entry time by approximately 60–70% for routine workflows.</li>
+        <li>Eliminated transcription errors in calculated fields (BMI, blood pressure averages, QTcF).</li>
+        <li>65+ reusable calculation methods documented in Markdown for team reference.</li>
+        <li>Scripts are self-updating via raw GitHub URLs, keeping all users on the latest version.</li>
+        <li>Adopted by multiple team members across different study protocols.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Lessons Learned</h2>
+      <ul>
+        <li>Browser automation at the DOM level requires defensive coding at every step — never assume an element exists or is in the expected state.</li>
+        <li>Clear logging is essential: when processing 50 subjects in sequence, users need to see exactly where things stand and what (if anything) failed.</li>
+        <li>Documenting each calculation method in plain language (not just code) made it far easier for non-developers to verify correctness.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Future Improvements</h2>
+      <ul>
+        <li>Migration to a browser extension for better lifecycle management and permissions.</li>
+        <li>Configuration UI for per-study method selection instead of code-level customization.</li>
+        <li>Export of automation logs to CSV for audit trail documentation.</li>
+        <li>Dry-run mode that previews all actions without executing them.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p>&copy; <span data-year>2025</span> Vinh Chieu Truong. All rights reserved.</p>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="https://www.linkedin.com/in/vinh-truong-224b93279/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/vctruong100" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:vctruong100@gmail.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/script.js" defer></script>
+</body>
+</html>

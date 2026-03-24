@@ -1,177 +1,495 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Vinh Chieu Truong | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="canonical" href="https://vctruong100.github.io/portfolio/">
+
+  <title>Vinh Chieu Truong — Software Developer &amp; UX Designer</title>
+  <meta name="description" content="Portfolio of Vinh Chieu Truong — software developer and UX designer specializing in full-stack development, automation, and accessible user interfaces.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vinh Chieu Truong — Software Developer &amp; UX Designer">
+  <meta property="og:description" content="Portfolio of Vinh Chieu Truong — software developer and UX designer specializing in full-stack development, automation, and accessible user interfaces.">
+  <meta property="og:image" content="https://vctruong100.github.io/portfolio/assets/images/og-image.png">
+  <meta property="og:url" content="https://vctruong100.github.io/portfolio/">
+  <meta property="og:site_name" content="Vinh Truong Portfolio">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vinh Chieu Truong — Software Developer &amp; UX Designer">
+  <meta name="twitter:description" content="Full-stack developer and UX designer building accessible, user-centered software.">
+  <meta name="twitter:image" content="https://vctruong100.github.io/portfolio/assets/images/og-image.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vinh Chieu Truong",
+    "url": "https://vctruong100.github.io/portfolio/",
+    "jobTitle": "Software Developer & UX Designer",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of California, Irvine"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/vinh-truong-224b93279/",
+      "https://github.com/vctruong100"
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <!-- HEADER / NAV -->
-  <header class="header">
-    <div class="container header__inner">
-      <nav>
-        <ul class="nav__list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="scheduling.html">ICS Scheduling</a></li>
-          <li><a href="game-on.html">Game-On</a></li>
-          <li><a href="fablixmovie.html">Fablix Project</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="site-logo" aria-label="Vinh Truong — Home">VT</a>
+
+      <nav aria-label="Primary navigation">
+        <noscript>
+          <style>.nav-toggle { display: none !important; } .nav-list { position: static !important; transform: none !important; flex-direction: row !important; flex-wrap: wrap !important; box-shadow: none !important; border: none !important; padding: 0 !important; }</style>
+        </noscript>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul id="primary-nav" class="nav-list" role="list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+              <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero__inner">
-      <div class="profile">
-        <img src="pictures/profilepicfrom2020.png" alt="Vinh Chieu Truong" class="profile__pic">
-      </div>
-      <h1 class="hero__title">Vinh Chieu Truong</h1>
-      <p class="hero__tagline">
-        I’m a recent informatics B.S. graduate from UC Irvine, passionate about Human-Computer Interaction (HCI), accessibility, and user-centered design. I’ve worked on a variety of technical projects involving front-end and back-end development, and I’m actively seeking opportunities to grow my skills in design, development, and information systems.
-      </p>
-    </div>
-  </section>
+  <main id="main-content">
 
-  <!-- PROJECTS -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <!-- ICS Scheduler -->
-      <div id="ics" class="project-card">
-        <div class="project-content">
-          <h2 class="project-title">ICS Scheduler</h2>
-          <p class="project-role">Role: Full Stack Developer</p>
-          <ul class="project-bullets">
-            <li>Produced requirements with two sponsor stakeholders</li>
-            <li>Prototyped calendar interactions in Figma and code in TypeScript</li>
-            <li>Developed RESTful Node.js/Express APIs backed by MongoDB Atlas to manage courses, user roles, classrooms, modules, and messaging</li>
-          </ul>
-          <a href="project1.html" class="btn btn--secondary">View Project</a>
-        </div>
-        <div class="project-media">
-          <img src="pictures/icsscheduling.png" alt="ICS Scheduler screenshot">
-          <p class="project-tech">Next.js • MongoDB • 22 weeks</p>
+    <section class="hero">
+      <div class="container">
+        <img
+          src="pictures/Vinh.jpg"
+          alt="Vinh Chieu Truong"
+          class="hero__portrait"
+          width="140"
+          height="140"
+          loading="eager"
+        >
+        <h1 class="hero__name">Vinh Chieu Truong</h1>
+        <p class="hero__tagline">
+          Software developer and UX designer building accessible, efficient tools that solve real workplace problems.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="#contact" class="btn btn--secondary">Get in Touch</a>
         </div>
       </div>
+    </section>
 
-      <!-- Game-On -->
-      <div id="gameon" class="project-card">
-        <div class="project-content">
-          <h2 class="project-title">Game-On — Sports Buddy App</h2>
-          <p class="project-role">Role: Lead Product Designer &amp; Front-End Developer</p>
-          <ul class="project-bullets">
-            <li>Rapid low-fi mockups + prototype in Figma; validated via first-click test</li>
-            <li>High-fi React Native with Expo; built design system (color-blind-safe palette)</li>
-            <li>Designed interactive UI components for filtering users, top navigation bar menu, and core features such as user authentication, forum-style threads, and profile management</li>
-          </ul>
-          <a href="project2.html" class="btn btn--secondary">View Project</a>
-        </div>
-        <div class="project-media">
-          <img src="pictures/gameon.png" alt="Game-On screenshot">
-          <p class="project-tech">React Native • TypeScript • 5-person team • 12 weeks</p>
+    <section id="projects" class="section">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Featured Projects</h2>
+          <p class="section__subtitle">
+            A selection of tools and applications I've designed and built.
+          </p>
+        </header>
+
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-card__image">
+              <img
+                src="pictures/cv-manager/cv-modea.png"
+                alt="Screenshot of the CV Research Experience Manager desktop application showing the GUI with Update/Inject, Redact, and Database tabs"
+                width="800"
+                height="450"
+                loading="lazy"
+              >
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Curriculum Vitae Manager</h3>
+              <p class="project-card__description">
+                An offline desktop application for managing the Research Experience section of CV documents, featuring automated study injection, protocol redaction, and fuzzy matching against master lists.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">Python</span>
+                <span class="tag">Tkinter</span>
+                <span class="tag">SQLite</span>
+                <span class="tag">python-docx</span>
+              </div>
+              <a href="projects/cv-manager/index.html" class="project-card__link">View Case Study</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image">
+              <img
+                src="pictures/tampermonkey/ClinSparkAutomator1.png"
+                alt="Screenshot of the Tampermonkey Automator floating panel overlaying a clinical platform interface"
+                width="800"
+                height="450"
+                loading="lazy"
+              >
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Tampermonkey Automator</h3>
+              <p class="project-card__description">
+                A suite of Tampermonkey userscripts that automate repetitive clinical data-entry workflows, including form filling, barcode scanning, and multi-step navigation across a clinical trial platform.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Tampermonkey</span>
+                <span class="tag">DOM Automation</span>
+              </div>
+              <a href="projects/tampermonkey-automator/index.html" class="project-card__link">View Case Study</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image">
+              <img
+                src="pictures/workplace/UKG Training Tracker.png"
+                alt="Screenshot of a workplace efficiency script GUI showing file selection and processing output"
+                width="800"
+                height="450"
+                loading="lazy"
+              >
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Workplace Efficiency Scripts</h3>
+              <p class="project-card__description">
+                A collection of Python desktop utilities for training compliance tracking, Excel data processing, visitor schedule parsing, and deviation report generation — each with a simple GUI.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">Python</span>
+                <span class="tag">pandas</span>
+                <span class="tag">openpyxl</span>
+                <span class="tag">Tkinter</span>
+              </div>
+              <a href="projects/workplace-efficiency-scripts/index.html" class="project-card__link">View Case Study</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image">
+              <img
+                src="pictures/ics-scheduler/icsscheduling.png"
+                alt="Screenshot of the ICS Scheduler web application showing a weekly calendar view with course blocks"
+                width="800"
+                height="450"
+                loading="lazy"
+              >
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">ICS Scheduler</h3>
+              <p class="project-card__description">
+                A full-stack course scheduling platform built for UC Irvine's ICS department, featuring drag-and-drop calendar interactions, role-based access, and RESTful APIs backed by MongoDB.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">TypeScript</span>
+              </div>
+              <a href="projects/ics-scheduler/index.html" class="project-card__link">View Case Study</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image">
+              <img
+                src="pictures/game-on/loginpage.png"
+                alt="Screenshot of the Game-On mobile app showing the sports buddy matching interface"
+                width="800"
+                height="450"
+                loading="lazy"
+              >
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Game-On — Sports Buddy App</h3>
+              <p class="project-card__description">
+                A React Native mobile application connecting sports enthusiasts through forum-style threads, user filtering, and a color-blind-safe design system validated through usability testing.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">React Native</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Expo</span>
+                <span class="tag">Figma</span>
+              </div>
+              <a href="projects/game-on/index.html" class="project-card__link">View Case Study</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image">
+              <img
+                src="pictures/fablix-movie/fabmovielist.png"
+                alt="Screenshot of the Fablix Movie DB application showing the search interface with movie results"
+                width="800"
+                height="450"
+                loading="lazy"
+              >
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Fablix Movie DB</h3>
+              <p class="project-card__description">
+                A full-stack movie database with secure login, full-text search with auto-complete, and high-performance indexing — deployed on AWS with MySQL and Tomcat.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">Java</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">AWS</span>
+                <span class="tag">jQuery</span>
+              </div>
+              <a href="projects/fablix-movie-db/index.html" class="project-card__link">View Case Study</a>
+            </div>
+          </article>
+
         </div>
       </div>
+    </section>
 
-      <!-- Fablix Movie DB -->
-      <div id="fablix" class="project-card">
-        <div class="project-content">
-          <h2 class="project-title">Fablix Movie DB Web App</h2>
-          <p class="project-role">Role: Full Stack Developer</p>
-          <ul class="project-bullets">
-            <li>Developed a full-stack movie database with secure login, full-text search, and auto-complete</li>
-            <li>Set up AWS instances, MySQL, and Tomcat, optimizing performance for handling thousands of movies</li>
-            <li>Implemented SHA-256 encryption, session management, and high-performance search indexing</li>
-          </ul>
-          <a href="project3.html" class="btn btn--secondary">View Project</a>
-        </div>
-        <div class="project-media">
-          <img src="pictures/fablix.png" alt="Fablix screenshot">
-          <p class="project-tech">Java • MySQL • Tomcat • REST APIs • jQuery • AWS</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Skills &amp; Tools</h2>
+          <p class="section__subtitle">
+            Technologies and disciplines I work with regularly.
+          </p>
+        </header>
 
-  <!-- TAGLINE SECTION -->
-  <section class="tagline">
-    <div class="container tagline__inner">
-      <p class="tagline-text">
-        Aspiring <span class="pill">UX/UI Designer</span> with a background in
-        <span class="pill">Informatics</span> at UC Irvine. Currently exploring
-        <span class="pill">React and design systems</span> to build accessible,
-        user-centered products. Passionate about blending design and code to create clean, intuitive experiences.
-      </p>
-    </div>
-  </section>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3 class="skill-category__title">Languages</h3>
+            <div class="skill-category__list">
+              <span class="tag">Python</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Java</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
 
-  <!-- SKILLS -->
-  <section class="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-list">
-        <span class="pill">UX Design</span>
-        <span class="pill">UI Design</span>
-        <span class="pill">Product Design</span>
-        <span class="pill">Back-end Development</span>
-        <span class="pill">Design Systems</span>
-        <span class="pill">Front-End Development</span>
-        <span class="pill">Workshops</span>
-        <span class="pill">Design Sprint</span>
-        <span class="pill">Interaction Design</span>
-        <span class="pill">User Testing</span>
-        <span class="pill">Usability Testing</span>
-        <span class="pill">UX Research</span>
-        <span class="pill">Leadership</span>
-        <span class="pill">Customer Service</span>
-        <span class="pill">Communication</span>
-        <span class="pill">Problem-solving</span>
-        <span class="pill">Fast-paced work adaptation</span>
-        <span class="pill">HTML/CSS</span>
-        <span class="pill">JavaScript</span>
-        <span class="pill">English</span>
-        <span class="pill">Vietnamese</span>
-      </div>
-    </div>
-  </section>
+          <div class="skill-category">
+            <h3 class="skill-category__title">Frameworks &amp; Libraries</h3>
+            <div class="skill-category__list">
+              <span class="tag">React / React Native</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Node.js / Express</span>
+              <span class="tag">Tkinter</span>
+              <span class="tag">pandas</span>
+              <span class="tag">python-docx</span>
+            </div>
+          </div>
 
-  <!-- EXPERIENCE -->
-  <section class="experience">
-    <div class="container">
-      <h2>Experience</h2>
-      <div class="experience-list">
-        <div class="experience-item">
-          <div class="role">Full Stack Developer</div>
-          <div class="company">UC Irvine</div>
-          <div class="dates">Sept 2024 – March 2025</div>
-        </div>
-        <div class="experience-item">
-          <div class="role">Team Member</div>
-          <div class="company">McDonald's</div>
-          <div class="dates">June 2022 – July 2023</div>
-        </div>
-        <div class="experience-item">
-          <div class="role">Team Member</div>
-          <div class="company">Fruitea Boba</div>
-          <div class="dates">March 2025 – Current</div>
+          <div class="skill-category">
+            <h3 class="skill-category__title">Tools &amp; Platforms</h3>
+            <div class="skill-category__list">
+              <span class="tag">Git / GitHub</span>
+              <span class="tag">Figma</span>
+              <span class="tag">AWS (EC2, RDS)</span>
+              <span class="tag">MongoDB Atlas</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">PyInstaller</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-category__title">Design &amp; UX</h3>
+            <div class="skill-category__list">
+              <span class="tag">UX Research</span>
+              <span class="tag">Usability Testing</span>
+              <span class="tag">Wireframing</span>
+              <span class="tag">Design Systems</span>
+              <span class="tag">Accessibility (WCAG)</span>
+              <span class="tag">Interaction Design</span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">About Me</h2>
+        </header>
+
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              I'm an Informatics graduate from the University of California, Irvine, with a focus on Human-Computer Interaction and user-centered design. I combine full-stack development skills with a strong UX sensibility to build tools that are both powerful and easy to use.
+            </p>
+            <p>
+              My recent work focuses on desktop automation and document processing tools used in clinical research environments. I enjoy turning tedious manual processes into reliable, one-click solutions — whether that's a Python desktop app, a browser userscript, or a data-processing pipeline.
+            </p>
+            <p>
+              When I'm not coding, I'm exploring design systems, learning new frameworks, or contributing to open-source projects. I'm always open to new opportunities and collaborations.
+            </p>
+          </div>
+
+          <div class="about__details">
+            <dl>
+              <div class="about__detail">
+                <div class="about__detail-icon" aria-hidden="true">&#127891;</div>
+                <div class="about__detail-text">
+                  <dt>Education</dt>
+                  <dd>B.S. Informatics — UC Irvine</dd>
+                </div>
+              </div>
+
+              <div class="about__detail">
+                <div class="about__detail-icon" aria-hidden="true">&#128187;</div>
+                <div class="about__detail-text">
+                  <dt>Focus Areas</dt>
+                  <dd>Full-Stack Development, Automation, HCI</dd>
+                </div>
+              </div>
+
+              <div class="about__detail">
+                <div class="about__detail-icon" aria-hidden="true">&#127758;</div>
+                <div class="about__detail-text">
+                  <dt>Location</dt>
+                  <dd>Southern California</dd>
+                </div>
+              </div>
+
+              <div class="about__detail">
+                <div class="about__detail-icon" aria-hidden="true">&#128172;</div>
+                <div class="about__detail-text">
+                  <dt>Languages</dt>
+                  <dd>English, Vietnamese</dd>
+                </div>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Get in Touch</h2>
+          <p class="section__subtitle">
+            Have a question or want to work together? Send me a message.
+          </p>
+        </header>
+
+        <div class="contact__grid">
+          <div class="contact__info">
+            <p>
+              I'm currently open to freelance work, full-time opportunities, and interesting collaborations. Feel free to reach out through the form or any of the channels below.
+            </p>
+
+            <div class="contact__links">
+              <a href="mailto:vctruong100@gmail.com" class="contact__link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                vctruong100@gmail.com
+              </a>
+
+              <a href="https://www.linkedin.com/in/vinh-truong-224b93279/" target="_blank" rel="noopener noreferrer" class="contact__link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+
+              <a href="https://github.com/vctruong100" target="_blank" rel="noopener noreferrer" class="contact__link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <form id="contact-form" class="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                autocomplete="name"
+                required
+                data-validate="required"
+                aria-describedby="contact-name-error"
+                placeholder="Your name"
+              >
+              <span id="contact-name-error" class="form-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                autocomplete="email"
+                required
+                data-validate="required email"
+                aria-describedby="contact-email-error"
+                placeholder="you@example.com"
+              >
+              <span id="contact-email-error" class="form-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                required
+                data-validate="required minlength"
+                data-minlength="10"
+                aria-describedby="contact-message-error"
+                placeholder="Tell me about your project or question…"
+              ></textarea>
+              <span id="contact-message-error" class="form-error" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary">Send Message</button>
+
+            <div class="form-status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
     <div class="container footer__inner">
-      <div class="footer-right">
-        <a href="https://www.linkedin.com/in/vinh-truong-224b93279/" target="_blank">LinkedIn</a>
-        <a href="mailto:vctruong100@gmail.com">Mail</a>
-        <a href="https://github/vctruong100.com">Github</a>
-      </div>
+      <p>&copy; <span data-year>2025</span> Vinh Chieu Truong. All rights reserved.</p>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="https://www.linkedin.com/in/vinh-truong-224b93279/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/vctruong100" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:vctruong100@gmail.com">Email</a>
+      </nav>
     </div>
   </footer>
+
+  <script src="assets/js/script.js" defer></script>
 
 </body>
 </html>

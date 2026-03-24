@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://vctruong100.github.io/portfolio/projects/ics-scheduler/">
+  <title>ICS Scheduler — Vinh Truong</title>
+  <meta name="description" content="A full-stack course scheduling platform for UC Irvine's ICS department featuring drag-and-drop calendar interactions, role-based access, and RESTful APIs.">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="ICS Scheduler — Case Study">
+  <meta property="og:description" content="Full-stack course scheduling platform with calendar interactions, role-based access, and MongoDB backend.">
+  <meta property="og:image" content="https://vctruong100.github.io/portfolio/assets/images/project-ics-scheduler-thumb.jpg">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "ICS Scheduler",
+    "description": "A full-stack course scheduling platform for UC Irvine's ICS department.",
+    "programmingLanguage": ["TypeScript", "JavaScript"],
+    "author": {
+      "@type": "Person",
+      "name": "Vinh Chieu Truong"
+    },
+    "codeRepository": "https://github.com/vctruong100/ics-scheduler"
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="../../index.html" class="site-logo" aria-label="Vinh Truong — Home">VT</a>
+      <nav aria-label="Primary navigation">
+        <noscript><style>.nav-toggle{display:none!important}.nav-list{position:static!important;transform:none!important;flex-direction:row!important;flex-wrap:wrap!important;box-shadow:none!important;border:none!important;padding:0!important}</style></noscript>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+        <ul id="primary-nav" class="nav-list" role="list">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../index.html#projects">Projects</a></li>
+          <li><a href="../../index.html#skills">Skills</a></li>
+          <li><a href="../../index.html#about">About</a></li>
+          <li><a href="../../index.html#contact">Contact</a></li>
+          <li>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+              <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../index.html#projects">Projects</a></li>
+        <li><span aria-current="page">ICS Scheduler</span></li>
+      </ol>
+    </nav>
+
+    <section class="project-hero container">
+      <h1 class="project-hero__title">ICS Scheduler</h1>
+      <div class="project-hero__meta">
+        <span>Role: Full Stack Developer</span>
+        <span>Timeline: 22 weeks (Sept 2024 – Mar 2025)</span>
+        <span>Team: 2 developers + 2 UX/UI designer + 2 stakeholders</span>
+      </div>
+      <p class="project-hero__summary">
+        A full-stack course scheduling platform built for UC Irvine's ICS department. Faculty and staff can manage course sections, classroom assignments, and weekly schedules through an interactive calendar interface with drag-and-drop functionality, role-based permissions, and real-time conflict detection.
+      </p>
+      <div class="project-hero__actions">
+        <a href="https://github.com/vctruong100/ics-scheduler" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View Source Code</a>
+        <a href="#" class="btn btn--secondary" aria-disabled="true">Live Demo (No Public Demo)</a>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">The Problem</h2>
+      <p>
+        The ICS department needed a modern scheduling tool to replace manual spreadsheet-based processes. Faculty needed to view available time slots, request rooms, and coordinate across multiple courses — all while avoiding conflicts and respecting room capacities.
+      </p>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">My Role &amp; Contributions</h2>
+      <div class="detail-grid">
+        <div class="detail-card">
+          <h3 class="detail-card__title">Requirements &amp; Design</h3>
+          <ul>
+            <li>Collaborated with two sponsor stakeholders to produce detailed requirements</li>
+            <li>Prototyped calendar interactions in Figma</li>
+            <li>Designed the data model for courses, users, classrooms, and modules</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Development</h3>
+          <ul>
+            <li>Built RESTful Node.js/Express APIs backed by MongoDB Atlas</li>
+            <li>Implemented role-based access control (admin, faculty, viewer)</li>
+            <li>Developed the Next.js front-end with TypeScript</li>
+            <li>Integrated a messaging system for schedule coordination</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Tech Stack</h2>
+      <div class="tech-stack">
+        <span class="tag">Next.js</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">Express</span>
+        <span class="tag">MongoDB Atlas</span>
+        <span class="tag">Figma</span>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Screenshots</h2>
+      <div class="project-gallery">
+        <figure class="project-gallery__item">
+          <img src="../../pictures/ics-scheduler/icsscheduling.png" alt="ICS Scheduler weekly calendar view showing color-coded course blocks across time slots" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Weekly calendar view with course blocks</figcaption>
+        </figure>
+        <figure class="project-gallery__item">
+          <img src="../../pictures/ics-scheduler/Assign Modules.png" alt="ICS Scheduler Scheduler Panel showing how staff can assign modules to courses" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Scheduler Module - Assign Modules</figcaption>
+        </figure>
+        <figure class="project-gallery__item">
+          <img src="../../pictures/ics-scheduler/CoSectionPref.png" alt="ICS Scheduler Scheduler Panel showing how staff can request co-section classes" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Scheduler Module - Co-Section Preferences</figcaption>
+        </figure>
+        <figure class="project-gallery__item">
+          <img src="../../pictures/ics-scheduler/Calendar page.png" alt="ICS Scheduler weekly calendar view showing color-coded course blocks across time slots" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Scheduler Module - Calendar View</figcaption>
+        </figure>
+        <figure class="project-gallery__item">
+          <img src="../../pictures/ics-scheduler/dashboard.png" alt="ICS Scheduler Admin Dashboard" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Admin Dashboard</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Challenges &amp; Solutions</h2>
+      <ul>
+        <li><strong>Conflict detection:</strong> Overlapping time slots for the same room needed real-time validation. I implemented server-side constraint checking on every schedule mutation.</li>
+        <li><strong>Stakeholder alignment:</strong> Requirements evolved over the 22-week timeline. Regular Figma prototype reviews kept everyone aligned before code was written.</li>
+        <li><strong>Data modeling:</strong> The relationship between courses, sections, time slots, and rooms required a flexible schema. MongoDB's document model handled the nested relationships well.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Outcomes</h2>
+      <ul>
+        <li>Delivered a functional prototype within the 22-week academic timeline.</li>
+        <li>Stakeholders validated the core calendar workflow through interactive demos.</li>
+        <li>Gained hands-on experience with real-world requirements gathering and iterative design.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Lessons Learned</h2>
+      <ul>
+        <li>Prototyping in Figma before coding saved significant rework — stakeholders could react to visual designs faster than written specs.</li>
+        <li>Role-based access control should be designed from the start, not bolted on later.</li>
+        <li>Calendar UIs have deceptively complex edge cases (DST, multi-day events, recurring patterns).</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p>&copy; <span data-year>2025</span> Vinh Chieu Truong. All rights reserved.</p>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="https://www.linkedin.com/in/vinh-truong-224b93279/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/vctruong100" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:vctruong100@gmail.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/script.js" defer></script>
+</body>
+</html>

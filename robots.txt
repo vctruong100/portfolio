@@ -1,0 +1,6 @@
+# robots.txt for vctruong100.github.io/portfolio
+
+User-agent: *
+Allow: /
+
+Sitemap: https://vctruong100.github.io/portfolio/sitemap.xml

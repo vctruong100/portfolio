@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://vctruong100.github.io/portfolio/projects/cv-manager/">
+  <title>Curriculum Vitae Manager — Vinh Truong</title>
+  <meta name="description" content="An offline desktop application for managing CV Research Experience sections with automated study injection, protocol redaction, and fuzzy matching.">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Curriculum Vitae Manager — Case Study">
+  <meta property="og:description" content="Offline desktop tool for managing CV Research Experience sections with fuzzy matching and automated document processing.">
+  <meta property="og:image" content="https://vctruong100.github.io/portfolio/assets/images/project-cv-manager-thumb.jpg">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "CV Research Experience Manager",
+    "description": "An offline desktop application for managing the Research Experience section of CV documents using master study lists.",
+    "programmingLanguage": ["Python"],
+    "author": {
+      "@type": "Person",
+      "name": "Vinh Chieu Truong"
+    },
+    "codeRepository": "https://github.com/vctruong100/cv-manager"
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="../../index.html" class="site-logo" aria-label="Vinh Truong — Home">VT</a>
+      <nav aria-label="Primary navigation">
+        <noscript>
+          <style>.nav-toggle { display: none !important; } .nav-list { position: static !important; transform: none !important; flex-direction: row !important; flex-wrap: wrap !important; box-shadow: none !important; border: none !important; padding: 0 !important; }</style>
+        </noscript>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="primary-nav" class="nav-list" role="list">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../index.html#projects">Projects</a></li>
+          <li><a href="../../index.html#skills">Skills</a></li>
+          <li><a href="../../index.html#about">About</a></li>
+          <li><a href="../../index.html#contact">Contact</a></li>
+          <li>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+              <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../index.html#projects">Projects</a></li>
+        <li><span aria-current="page">Curriculum Vitae Manager</span></li>
+      </ol>
+    </nav>
+
+    <section class="project-hero container">
+      <h1 class="project-hero__title">Curriculum Vitae Manager</h1>
+      <div class="project-hero__meta">
+        <span>Role: Solo Developer</span>
+        <span>Timeline: Ongoing (2024–Present)</span>
+        <span>Platform: Windows / macOS / Linux</span>
+      </div>
+      <p class="project-hero__summary">
+        An offline-only desktop application that automates the management of Research Experience sections in CV documents. It parses Word files, injects new studies from Excel master lists, redacts protocols for blinded submissions, and maintains a local SQLite database — all without ever connecting to the internet.
+      </p>
+      <div class="project-hero__actions">
+        <a href="https://github.com/vctruong100/Curriculum-Vitae-Manager" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View Source Code</a>
+        <a href="#" class="btn btn--secondary" aria-disabled="true">Desktop App (No Live Demo)</a>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">The Problem</h2>
+      <p>
+        In clinical research organizations, staff CVs must list every study they've worked on — often hundreds of entries organized by clinical trial phase and therapeutic area. Keeping these documents current is a tedious, error-prone process:
+      </p>
+      <ul>
+        <li>New studies must be manually added in the correct hierarchy and format.</li>
+        <li>Protocol numbers and treatment names must be redacted for blinded regulatory submissions.</li>
+        <li>Duplicate entries creep in when multiple people update the same document.</li>
+        <li>Formatting inconsistencies accumulate over years of manual edits.</li>
+      </ul>
+      <p>
+        Staff could spend hours per CV update, and mistakes in redacted documents could compromise clinical trial integrity.
+      </p>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Solution Overview</h2>
+      <div class="detail-grid">
+        <div class="detail-card">
+          <h3 class="detail-card__title">Mode A: Update &amp; Inject</h3>
+          <ul>
+            <li>Parses the Research Experience section from any .docx CV</li>
+            <li>Compares against a master study list (.xlsx or SQLite database)</li>
+            <li>Injects only new studies above a calculated benchmark year</li>
+            <li>Prevents duplicates using both exact and fuzzy matching</li>
+            <li>Preserves all existing formatting and document structure</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Mode B: Redact Protocols</h3>
+          <ul>
+            <li>Identifies protocol-bearing studies using text analysis (not font color)</li>
+            <li>Replaces protocol numbers and treatment names with XXX masks</li>
+            <li>Operates in-place — no paragraphs added or removed</li>
+            <li>Idempotent: already-masked studies are automatically skipped</li>
+            <li>Optional re-sorting of affected subcategories only</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Mode C: Database Management</h3>
+          <ul>
+            <li>Per-user private SQLite databases with WAL journaling</li>
+            <li>Import/export between Excel and database formats</li>
+            <li>Full CRUD for phases, subcategories, and studies</li>
+            <li>Automatic versioned backups with configurable retention</li>
+            <li>Automatic category order maintenance</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Architecture Highlights</h3>
+          <ul>
+            <li>15+ Python modules with clear single-responsibility design</li>
+            <li>460+ automated tests (hermetic, zero external dependencies)</li>
+            <li>Offline enforcement: socket blocking and proxy detection at startup</li>
+            <li>Packaged as a single .exe via PyInstaller (25 MB)</li>
+            <li>Both GUI (tkinter) and CLI interfaces</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Tech Stack</h2>
+      <div class="tech-stack">
+        <span class="tag">Python 3.8+</span>
+        <span class="tag">Tkinter</span>
+        <span class="tag">python-docx</span>
+        <span class="tag">openpyxl</span>
+        <span class="tag">rapidfuzz</span>
+        <span class="tag">SQLite (WAL)</span>
+        <span class="tag">PyInstaller</span>
+        <span class="tag">pytest</span>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Screenshots</h2>
+      <div class="project-gallery">
+        <figure class="project-gallery__item">
+          <img src="../../pictures/cv-manager/cv-modea.png" alt="CV Manager GUI showing the Update/Inject tab with file selection and preview options" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Update/Inject tab — file selection and preview</figcaption>
+        </figure>
+        <figure class="project-gallery__item">
+          <img src="../../pictures/cv-manager/modeb.png" alt="CV Manager GUI showing the Redact Protocols tab with processing results" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Redact Protocols tab — processing results</figcaption>
+        </figure>
+        <figure class="project-gallery__item">
+          <img src="../../pictures/cv-manager/modec.png" alt="CV Manager GUI showing the Database Management tab with site list and study editor" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Database Management — site and study editor</figcaption>
+        </figure>
+        <figure class="project-gallery__item">
+          <img src="../../pictures/cv-manager/Setting.png" alt="CV Manager Configuration dialog showing settings with tooltip icons" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Configuration dialog with tooltip icons</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Challenges &amp; Solutions</h2>
+      <ul>
+        <li><strong>Preserving Word formatting:</strong> Existing paragraph XML elements had to be moved, never recreated, to keep original bold/color/indentation. I built a surgical XML-element reordering system.</li>
+        <li><strong>Phase/subcategory matching:</strong> Headings like "PHASE I" vs. "Phase 1" vs. "Phase I" needed to match. I implemented Unicode NFC normalization, casefold comparison, and a Roman numeral synonym table.</li>
+        <li><strong>Subcategory vs. sponsor detection:</strong> Short text lines like "Healthy Adults" could be either. A look-ahead heuristic checks if the next non-empty line starts with a year to disambiguate.</li>
+        <li><strong>Offline enforcement:</strong> The app handles sensitive data, so I implemented a startup guard that blocks all network sockets and detects proxy environment variables.</li>
+        <li><strong>Single-file distribution:</strong> PyInstaller packaging required careful hidden-import management for rapidfuzz submodules and docx internals.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Outcomes &amp; Impact</h2>
+      <ul>
+        <li>Reduced CV update time from 30–60 minutes per document to under 2 minutes.</li>
+        <li>Eliminated duplicate study entries and formatting inconsistencies.</li>
+        <li>460+ automated tests with zero regressions across 7 major feature additions.</li>
+        <li>Packaged as a portable 25 MB .exe — no Python installation required for end users.</li>
+        <li>Successfully deployed for daily use in a clinical research setting.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Lessons Learned</h2>
+      <ul>
+        <li>Investing heavily in hermetic tests early made it safe to refactor major subsystems (sort logic, redaction, output routing) without breaking existing behavior.</li>
+        <li>Text normalization is deceptively complex — Unicode dashes, smart quotes, and whitespace variants caused the majority of subtle bugs.</li>
+        <li>Designing for "offline-only" from day one simplified security decisions but required creative solutions for dependency management and distribution.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Future Improvements</h2>
+      <ul>
+        <li>Multi-document batch processing for sites with dozens of CVs.</li>
+        <li>Diff viewer showing exactly what changed between input and output documents.</li>
+        <li>Auto-updater for the .exe that checks a local network share (not the internet).</li>
+        <li>PDF export alongside the .docx output.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p>&copy; <span data-year>2025</span> Vinh Chieu Truong. All rights reserved.</p>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="https://www.linkedin.com/in/vinh-truong-224b93279/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/vctruong100" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:vctruong100@gmail.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/script.js" defer></script>
+</body>
+</html>

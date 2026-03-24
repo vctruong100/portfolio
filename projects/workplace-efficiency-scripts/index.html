@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://vctruong100.github.io/portfolio/projects/workplace-efficiency-scripts/">
+  <title>Workplace Efficiency Scripts — Vinh Truong</title>
+  <meta name="description" content="A collection of Python desktop utilities for training compliance tracking, Excel processing, visitor schedule parsing, and deviation report generation.">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Workplace Efficiency Scripts — Case Study">
+  <meta property="og:description" content="Python desktop utilities automating training compliance, data processing, and report generation workflows.">
+  <meta property="og:image" content="https://vctruong100.github.io/portfolio/assets/images/project-efficiency-scripts-thumb.jpg">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Workplace Efficiency Scripts",
+    "description": "A collection of Python desktop utilities for training compliance tracking, Excel data processing, and report generation.",
+    "author": {
+      "@type": "Person",
+      "name": "Vinh Chieu Truong"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="../../index.html" class="site-logo" aria-label="Vinh Truong — Home">VT</a>
+      <nav aria-label="Primary navigation">
+        <noscript>
+          <style>.nav-toggle { display: none !important; } .nav-list { position: static !important; transform: none !important; flex-direction: row !important; flex-wrap: wrap !important; box-shadow: none !important; border: none !important; padding: 0 !important; }</style>
+        </noscript>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="primary-nav" class="nav-list" role="list">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../index.html#projects">Projects</a></li>
+          <li><a href="../../index.html#skills">Skills</a></li>
+          <li><a href="../../index.html#about">About</a></li>
+          <li><a href="../../index.html#contact">Contact</a></li>
+          <li>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+              <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../index.html#projects">Projects</a></li>
+        <li><span aria-current="page">Workplace Efficiency Scripts</span></li>
+      </ol>
+    </nav>
+
+    <section class="project-hero container">
+      <h1 class="project-hero__title">Workplace Efficiency Scripts</h1>
+      <div class="project-hero__meta">
+        <span>Role: Solo Developer</span>
+        <span>Timeline: 2024–Present</span>
+        <span>Platform: Windows Desktop</span>
+      </div>
+      <p class="project-hero__summary">
+        A growing collection of purpose-built Python utilities that automate tedious data-processing tasks in a workplace setting. Each script has a simple GUI, reads from standard Excel/CSV exports, and produces clean reports — no technical expertise required from end users.
+      </p>
+      <div class="project-hero__actions">
+        <a href="#" class="btn btn--primary" aria-disabled="true">Private Repositories</a>
+        <a href="#scripts" class="btn btn--secondary">View Scripts</a>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">The Problem</h2>
+      <p>
+        Operational teams in regulated environments deal with a constant stream of data reconciliation tasks: comparing training records across systems, parsing visitor schedules, tracking deviations, and generating compliance reports. These tasks share common traits:
+      </p>
+      <ul>
+        <li>Data lives in multiple Excel/CSV exports from different systems that don't talk to each other.</li>
+        <li>Staff manually cross-reference files in Excel, which is slow and error-prone.</li>
+        <li>Reports must be generated on tight deadlines — often same-day turnaround.</li>
+        <li>The people performing these tasks are domain experts, not programmers.</li>
+      </ul>
+    </section>
+
+    <section id="scripts" class="project-section container">
+      <h2 class="project-section__title">The Scripts</h2>
+
+      <div class="detail-grid">
+        <div class="detail-card">
+          <h3 class="detail-card__title">Training Comparison Tool</h3>
+          <p class="project-section" style="padding:0; border:none;">
+            Compares training progress between a CSV/CSX export and an XLSX assignment file to identify incomplete trainings. Optionally integrates an email roster for contact validation.
+          </p>
+          <ul>
+            <li>Matches employees by normalized employee number and course name</li>
+            <li>Filters completed trainings (100%) automatically</li>
+            <li>Detects Leave of Absence employees and reports them separately</li>
+            <li>Outputs result.csv, result.xlsx, missing emails report, and diagnostics</li>
+            <li>Auto-detects CSV delimiter (comma, semicolon, tab)</li>
+          </ul>
+          <div class="tech-stack" style="margin-top: var(--space-4);">
+            <span class="tag">Python</span>
+            <span class="tag">pandas</span>
+            <span class="tag">openpyxl</span>
+            <span class="tag">Tkinter</span>
+          </div>
+        </div>
+
+        <div class="detail-card">
+          <h3 class="detail-card__title">Training Tracker Updater</h3>
+          <p class="project-section" style="padding:0; border:none;">
+            An extended version of the comparison tool that updates an existing tracker spreadsheet with the latest training status data, preserving historical records while flagging new gaps.
+          </p>
+          <ul>
+            <li>Merge-updates existing tracker with fresh export data</li>
+            <li>Highlights newly missing trainings vs. previously known gaps</li>
+            <li>Email validation against a separate roster file</li>
+            <li>Summary metrics: unique names, LOA count, missing email count</li>
+          </ul>
+          <div class="tech-stack" style="margin-top: var(--space-4);">
+            <span class="tag">Python</span>
+            <span class="tag">pandas</span>
+            <span class="tag">openpyxl</span>
+          </div>
+        </div>
+
+        <div class="detail-card">
+          <h3 class="detail-card__title">Visitor Schedule Parser</h3>
+          <p class="project-section" style="padding:0; border:none;">
+            Parses exported visitor schedule data, deduplicates entries, and produces a clean consolidated report ready for distribution or import into other systems.
+          </p>
+          <ul>
+            <li>Reads complex multi-sheet Excel exports</li>
+            <li>Intelligent deduplication based on name + date + purpose</li>
+            <li>Planned visit parsing with date range support</li>
+            <li>GUI with file selection and one-click processing</li>
+          </ul>
+          <div class="tech-stack" style="margin-top: var(--space-4);">
+            <span class="tag">Python</span>
+            <span class="tag">openpyxl</span>
+            <span class="tag">Tkinter</span>
+          </div>
+        </div>
+
+        <div class="detail-card">
+          <h3 class="detail-card__title">Deviation Report Parser</h3>
+          <p class="project-section" style="padding:0; border:none;">
+            Extracts deviation data from exported study reports and generates a formatted tracker spreadsheet suitable for compliance review and trending analysis.
+          </p>
+          <ul>
+            <li>Parses structured deviation exports into normalized rows</li>
+            <li>Generates formatted Excel output with proper column widths</li>
+            <li>Supports multiple study formats and date patterns</li>
+            <li>Batch file launcher for non-technical users</li>
+          </ul>
+          <div class="tech-stack" style="margin-top: var(--space-4);">
+            <span class="tag">Python</span>
+            <span class="tag">openpyxl</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Shared Design Principles</h2>
+      <ul>
+        <li><strong>Zero-config for end users:</strong> Each script ships with a .bat launcher that installs dependencies and opens the GUI — double-click and go.</li>
+        <li><strong>Defensive parsing:</strong> All scripts handle missing columns, empty rows, encoding issues, and unexpected formats with clear error messages.</li>
+        <li><strong>Output alongside input:</strong> Results are written to the same directory as the input files, so users always know where to find them.</li>
+        <li><strong>Minimal dependencies:</strong> Only pandas and openpyxl — no heavy frameworks or internet connectivity required.</li>
+        <li><strong>Consistent GUI pattern:</strong> Every script uses the same Tkinter layout: file selectors at top, Run button in the middle, status output at bottom.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Screenshots</h2>
+      <div class="project-gallery">
+        <figure class="project-gallery__item">
+          <img src="../../pictures/workplace/UKG Training Tracker.png" alt="UKG Training Tracker GUI showing file selectors, Run button, and status output with row counts" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">UKG Training Tracker — GUI with results</figcaption>
+        </figure>
+        <figure class="project-gallery__item">
+          <img src="../../pictures/workplace/ScannedDocumentParser.png" alt="Scanned Document Parser showing parsed deviation entries" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Scanned Document Parser — parsed output</figcaption>
+        </figure>
+        <figure class="project-gallery__item">
+          <img src="../../pictures/workplace/AttendanceTracker.png" alt="Attendance Tracker GUI showing employee tracking interface" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Attendance Tracker — employee tracking</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Challenges &amp; Solutions</h2>
+      <ul>
+        <li><strong>Inconsistent export formats:</strong> Source systems produce slightly different column names and date formats over time. I built flexible column-matching logic that normalizes headers before processing.</li>
+        <li><strong>Large file sizes:</strong> Some training exports contain 10,000+ rows. pandas handles the heavy lifting, but I had to optimize memory usage for machines with limited RAM.</li>
+        <li><strong>User trust:</strong> Non-technical users needed confidence the tools produced correct results. I added diagnostics output (input/output row counts, match rates) so users can verify at a glance.</li>
+        <li><strong>Distribution without IT support:</strong> No admin privileges available to install Python. Each tool uses a .bat file that invokes the system Python launcher (`py`) and pip-installs dependencies at first run.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Outcomes &amp; Impact</h2>
+      <ul>
+        <li>Training comparison reports that took 2–3 hours now complete in under 30 seconds.</li>
+        <li>Eliminated manual cross-referencing errors in compliance tracking.</li>
+        <li>Tools adopted by team members with no programming background.</li>
+        <li>Diagnostics and missing-email reports caught data quality issues upstream.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Lessons Learned</h2>
+      <ul>
+        <li>The best automation tools are the ones that feel invisible — users should only interact with a file picker and a Run button.</li>
+        <li>Always produce a diagnostics file alongside the main output. It answers "did it work?" before anyone has to open the result.</li>
+        <li>Shipping with a .bat launcher instead of requiring a Python install dropped the adoption barrier to near zero.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Future Improvements</h2>
+      <ul>
+        <li>Consolidate all scripts into a single tabbed desktop application.</li>
+        <li>Add scheduled/automated runs (watch folder for new exports, process automatically).</li>
+        <li>Email report delivery for managers who need results without opening files.</li>
+        <li>Package as a standalone .exe to eliminate the Python dependency entirely.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p>&copy; <span data-year>2025</span> Vinh Chieu Truong. All rights reserved.</p>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="https://www.linkedin.com/in/vinh-truong-224b93279/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/vctruong100" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:vctruong100@gmail.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/script.js" defer></script>
+</body>
+</html>

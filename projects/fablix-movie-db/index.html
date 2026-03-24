@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://vctruong100.github.io/portfolio/projects/fablix-movie-db/">
+  <title>Fablix Movie DB — Vinh Truong</title>
+  <meta name="description" content="A full-stack movie database with secure login, full-text search with auto-complete, and high-performance indexing deployed on AWS.">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Fablix Movie DB — Case Study">
+  <meta property="og:description" content="Full-stack movie database with secure login, search, and AWS deployment.">
+  <meta property="og:image" content="https://vctruong100.github.io/portfolio/assets/images/project-fablix-thumb.jpg">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Fablix Movie DB",
+    "description": "A full-stack movie database web application with secure login, full-text search, and AWS deployment.",
+    "programmingLanguage": ["Java", "JavaScript", "SQL"],
+    "author": {
+      "@type": "Person",
+      "name": "Vinh Chieu Truong"
+    },
+    "codeRepository": "https://github.com/vctruong100/fablixmovie"
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="../../index.html" class="site-logo" aria-label="Vinh Truong — Home">VT</a>
+      <nav aria-label="Primary navigation">
+        <noscript><style>.nav-toggle{display:none!important}.nav-list{position:static!important;transform:none!important;flex-direction:row!important;flex-wrap:wrap!important;box-shadow:none!important;border:none!important;padding:0!important}</style></noscript>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+        <ul id="primary-nav" class="nav-list" role="list">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../index.html#projects">Projects</a></li>
+          <li><a href="../../index.html#skills">Skills</a></li>
+          <li><a href="../../index.html#about">About</a></li>
+          <li><a href="../../index.html#contact">Contact</a></li>
+          <li>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+              <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../index.html#projects">Projects</a></li>
+        <li><span aria-current="page">Fablix Movie DB</span></li>
+      </ol>
+    </nav>
+
+    <section class="project-hero container">
+      <h1 class="project-hero__title">Fablix Movie DB Web App</h1>
+      <div class="project-hero__meta">
+        <span>Role: Full Stack Developer</span>
+        <span>Timeline: Fall 2024</span>
+        <span>Course Project — UC Irvine</span>
+      </div>
+      <p class="project-hero__summary">
+        A full-stack movie database application featuring secure user authentication with SHA-256 encryption, full-text search with AJAX auto-complete, genre/letter browsing, a shopping cart with payment flow, and an admin dashboard — all deployed on AWS with optimized MySQL indexing for 10,000+ records.
+      </p>
+      <div class="project-hero__actions">
+        <a href="https://github.com/vctruong100/fablixmovie" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View Source Code</a>
+        <a href="#" class="btn btn--secondary" aria-disabled="true">AWS Instance (Decommissioned)</a>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">The Problem</h2>
+      <p>
+        The project challenged us to build a production-grade web application from scratch: secure authentication, efficient search over a large dataset, session management, payment processing, and cloud deployment — demonstrating full-stack competency across the entire technology stack.
+      </p>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Key Features</h2>
+      <div class="detail-grid">
+        <div class="detail-card">
+          <h3 class="detail-card__title">Search &amp; Browse</h3>
+          <ul>
+            <li>Full-text search with MySQL FULLTEXT indexing</li>
+            <li>AJAX-powered auto-complete with debounced requests</li>
+            <li>Browse by genre or alphabetical letter</li>
+            <li>Sort by title or rating (ascending/descending)</li>
+            <li>Configurable pagination (10/25/50/100 per page)</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Security &amp; Infrastructure</h3>
+          <ul>
+            <li>SHA-256 password hashing with salted storage</li>
+            <li>Session management with server-side validation</li>
+            <li>reCAPTCHA integration on login</li>
+            <li>Role-based access control (user vs. admin)</li>
+            <li>Deployed on AWS EC2 with RDS MySQL and Tomcat</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">E-Commerce Flow</h3>
+          <ul>
+            <li>Movie detail pages with metadata and cast information</li>
+            <li>Shopping cart with quantity adjustment and removal</li>
+            <li>Payment form with client-side and server-side validation</li>
+            <li>Order confirmation with transaction history</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Performance</h3>
+          <ul>
+            <li>Optimized FULLTEXT indexes reduced search from 250ms to 80ms</li>
+            <li>Connection pooling for database efficiency</li>
+            <li>AJAX navigation eliminates full-page reloads</li>
+            <li>Handles 10,000+ movie records smoothly</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Tech Stack</h2>
+      <div class="tech-stack">
+        <span class="tag">Java (Servlets)</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">Apache Tomcat</span>
+        <span class="tag">jQuery / AJAX</span>
+        <span class="tag">HTML / CSS</span>
+        <span class="tag">AWS EC2 / RDS</span>
+        <span class="tag">REST APIs</span>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Screenshots</h2>
+      <div class="project-gallery">
+        <figure class="project-gallery__item">
+          <img src="../../pictures/fablix-movie/fablix.png" alt="Fablix login page with email and password fields and reCAPTCHA verification" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Login page with reCAPTCHA</figcaption>
+        </figure>
+        <figure class="project-gallery__item">
+          <img src="../../pictures/fablix-movie/fabhome.png" alt="Fablix home page showing search filters for title, year, director, and star" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Home page — multi-field search interface</figcaption>
+        </figure>
+        <figure class="project-gallery__item">
+          <img src="../../pictures/fablix-movie/fabmovielist.png" alt="Fablix movie list showing search results with sorting and pagination controls" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Search results with sort and pagination</figcaption>
+        </figure>
+        <figure class="project-gallery__item">
+          <img src="../../pictures/fablix-movie/fabmoviedetails.png" alt="Fablix movie detail page showing year, director, rating, genres, stars, and add-to-cart button" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Movie detail page with metadata</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Challenges &amp; Solutions</h2>
+      <ul>
+        <li><strong>Search performance:</strong> Naive LIKE queries on 10K+ records were too slow. Adding FULLTEXT indexes and switching to MATCH…AGAINST queries reduced average response time by 68%.</li>
+        <li><strong>Auto-complete UX:</strong> Firing a search on every keystroke overwhelmed the server. I implemented client-side debouncing (300ms) and result caching to keep the experience snappy.</li>
+        <li><strong>AWS deployment:</strong> Configuring EC2 security groups, RDS networking, and Tomcat SSL termination was my first hands-on cloud deployment. Documenting each step made subsequent deployments routine.</li>
+        <li><strong>Session security:</strong> Preventing session hijacking required server-side session validation on every request, not just cookie presence.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Outcomes</h2>
+      <ul>
+        <li>Fully functional application deployed on AWS handling search, auth, cart, and payment.</li>
+        <li>Search optimization reduced average query time from 250ms to 80ms.</li>
+        <li>Gained practical experience with cloud deployment, database optimization, and security best practices.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Lessons Learned</h2>
+      <ul>
+        <li>Database indexing strategy should be designed alongside the query patterns, not as an afterthought.</li>
+        <li>Security must be layered: hashing alone isn't enough without proper session management and input validation.</li>
+        <li>Cloud deployment introduces an entire class of networking and configuration challenges that local development doesn't prepare you for.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Future Improvements</h2>
+      <ul>
+        <li>Mobile-responsive redesign of the front-end.</li>
+        <li>Migration to Elasticsearch for advanced filtering and relevance scoring.</li>
+        <li>Containerized deployment with Docker for reproducible environments.</li>
+        <li>Modern front-end framework (React) replacing jQuery.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p>&copy; <span data-year>2025</span> Vinh Chieu Truong. All rights reserved.</p>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="https://www.linkedin.com/in/vinh-truong-224b93279/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/vctruong100" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:vctruong100@gmail.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/script.js" defer></script>
+</body>
+</html>
