@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>!function(){var t=localStorage.getItem("theme");if("dark"===t||"light"===t)document.documentElement.setAttribute("data-theme",t)}();</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://vctruong100.github.io/portfolio/resume.html">
+  <title>Resume — Vinh Truong</title>
+  <meta name="description" content="Resume of Vinh Chieu Truong — software developer and UX designer specializing in full-stack development and automation.">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Vinh Truong — Resume">
+  <meta property="og:description" content="Software developer and UX designer. B.S. Informatics, UC Irvine.">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="site-logo" aria-label="Vinh Truong — Home">VT</a>
+
+      <nav aria-label="Primary navigation">
+        <noscript>
+          <style>.nav-toggle { display: none !important; } .nav-list { position: static !important; transform: none !important; flex-direction: row !important; flex-wrap: wrap !important; box-shadow: none !important; border: none !important; padding: 0 !important; }</style>
+        </noscript>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul id="primary-nav" class="nav-list" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="resume.html" aria-current="page">Resume</a></li>
+          <li>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+              <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="resume-page">
+
+      <div class="resume-actions">
+        <a href="resume/Resume.docx" download class="btn btn--secondary btn--sm">Download .docx</a>
+        <button type="button" class="btn btn--primary btn--sm" onclick="window.print()">Print / Save PDF</button>
+      </div>
+
+      <div id="resume-content" aria-live="polite">
+        <p class="resume-loading">Loading resume&hellip;</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p>&copy; <span data-year>2025</span> Vinh Chieu Truong. All rights reserved.</p>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="https://www.linkedin.com/in/vinh-truong-224b93279/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/vctruong100" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:vctruong100@gmail.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js" defer></script>
+  <script>
+  (function () {
+    'use strict';
+
+    var RESUME_DATA = {"name":"Vinh Chieu Truong","contact":{"email":"vctruong100@gmail.com","linkedin":"https://www.linkedin.com/in/vinh-truong-224b93279/","github":"https://github.com/vctruong100","location":"Southern California"},"education":[{"school":"University of California, Irvine","degree":"B.S. in Informatics","location":"Irvine, CA","dates":"09.2021 – 06.2025","coursework":["Project Management","Human-Computer Interaction","Data Visualization","Databases","Web Applications"]}],"experience":[{"title":"Full Stack Developer","company":"ICS Scheduling — University of California, Irvine","sponsor":"Lumen & Sandy","location":"Irvine, CA","dates":"09.2024 – 03.2025","duration":"22 weeks","bullets":["Built a Next.js/TypeScript web app with a React drag-and-drop calendar for module scheduling.","Developed RESTful Node.js/Express APIs backed by MongoDB Atlas to manage courses, user roles, classrooms, modules, and messaging.","Ran Agile sprints: delivered bi-weekly demos, managed Git feature branches, and iterated on Figma wireframes."]}],"projects":[{"name":"ClinSpark Master Schedule","caseStudy":"projects/clinspark-master-schedule/index.html","tech":["React","TypeScript","FastAPI","PostgreSQL","TailwindCSS"],"bullets":["Developed a production-deployed, full-stack scheduling platform for clinical trial e-source builders with real-time study tracking, Gantt chart visualization, role-based access control, and audit logging.","Built a React/TypeScript frontend with a FastAPI/PostgreSQL backend, implementing JWT authentication with HttpOnly cookies, edit-lock conflict prevention, and one-click Excel export workflows."]},{"name":"Tampermonkey Automation Suite","caseStudy":"projects/tampermonkey-automator/index.html","tech":["JavaScript","Tampermonkey","DOM Automation"],"bullets":["Developed browser automation scripts across ClinSpark, Florence eBinder, and Microsoft Teams, automating multi-step data-entry workflows, eLog signing, and meeting attendance tracking.","Built resilient DOM automation using localStorage state machines, MutationObserver, and virtual-scroll scanning, reducing routine workflow time by approximately 60–70%."]},{"name":"Fablix Movie DB Web Application","caseStudy":"projects/fablix-movie-db/index.html","tech":["Java","Tomcat","MySQL","REST APIs","AWS","jQuery"],"bullets":["Developed a full-stack movie database with secure login, full-text search, and auto-complete.","Set up AWS instances, MySQL, and Tomcat, optimizing performance for handling thousands of movies."]},{"name":"Spacetime Crawler","caseStudy":null,"tech":["Python"],"bullets":["Developed a web crawler optimized for the ICS server, focusing on efficient data gathering and analysis.","Implemented unique page detection, subdomain mapping, and content analysis for comprehensive site exploration."]}],"skills":[{"category":"Languages","items":["Python","Java","C++","JavaScript","TypeScript"]},{"category":"Frameworks","items":["React.js","FastAPI","Next.js","Node.js","Express","TailwindCSS"]},{"category":"Technologies","items":["REST APIs","PostgreSQL","MongoDB","MySQL","AWS","Tomcat","Cloudflare Pages","Render"]},{"category":"Tools","items":["Git","VS Code","Figma","Microsoft Excel","Google Workspace"]},{"category":"Additional","items":["Bilingual (English, Vietnamese)","Fast learner","Strong problem-solving","Adaptable under pressure"]}]};
+
+    function esc(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function renderContact(contact) {
+      var items = [
+        '<li>' + esc(contact.location) + '</li>',
+        '<li><a href="mailto:' + esc(contact.email) + '">' + esc(contact.email) + '</a></li>',
+        '<li><a href="' + esc(contact.linkedin) + '" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>',
+        '<li><a href="' + esc(contact.github) + '" target="_blank" rel="noopener noreferrer">github.com/vctruong100</a></li>'
+      ];
+      return '<ul class="resume-header__contact">' + items.join('') + '</ul>';
+    }
+
+    function renderEducation(education) {
+      var html = '<section class="resume-section" aria-labelledby="resume-education">';
+      html += '<h2 class="resume-section__heading" id="resume-education">Education</h2>';
+      for (var i = 0; i < education.length; i++) {
+        var ed = education[i];
+        html += '<div class="resume-entry">';
+        html += '<div class="resume-entry__header">';
+        html += '<span class="resume-entry__title">' + esc(ed.school) + '</span>';
+        html += '<span class="resume-entry__meta">' + esc(ed.location) + ' &nbsp;|&nbsp; ' + esc(ed.dates) + '</span>';
+        html += '</div>';
+        html += '<div class="resume-entry__subtitle">' + esc(ed.degree) + '</div>';
+        if (ed.coursework && ed.coursework.length) {
+          html += '<div class="resume-entry__subtitle"><strong>Coursework:</strong> ' + ed.coursework.map(esc).join(', ') + '</div>';
+        }
+        html += '</div>';
+      }
+      html += '</section>';
+      return html;
+    }
+
+    function renderExperience(experience) {
+      var html = '<section class="resume-section" aria-labelledby="resume-experience">';
+      html += '<h2 class="resume-section__heading" id="resume-experience">Experience</h2>';
+      for (var i = 0; i < experience.length; i++) {
+        var exp = experience[i];
+        html += '<div class="resume-entry">';
+        html += '<div class="resume-entry__header">';
+        html += '<span class="resume-entry__title">' + esc(exp.title) + '</span>';
+        html += '<span class="resume-entry__meta">' + esc(exp.location) + ' &nbsp;|&nbsp; ' + esc(exp.dates) + '</span>';
+        html += '</div>';
+        html += '<div class="resume-entry__subtitle">' + esc(exp.company) + (exp.duration ? ' (' + esc(exp.duration) + ')' : '') + '</div>';
+        if (exp.bullets && exp.bullets.length) {
+          html += '<ul class="resume-entry__bullets">';
+          for (var j = 0; j < exp.bullets.length; j++) {
+            html += '<li>' + esc(exp.bullets[j]) + '</li>';
+          }
+          html += '</ul>';
+        }
+        html += '</div>';
+      }
+      html += '</section>';
+      return html;
+    }
+
+    function renderProjects(projects) {
+      var html = '<section class="resume-section" aria-labelledby="resume-projects">';
+      html += '<h2 class="resume-section__heading" id="resume-projects">Projects</h2>';
+      for (var i = 0; i < projects.length; i++) {
+        var proj = projects[i];
+        html += '<div class="resume-entry">';
+        html += '<div class="resume-entry__header">';
+        var titleHtml = proj.caseStudy
+          ? '<a href="' + esc(proj.caseStudy) + '">' + esc(proj.name) + '</a>'
+          : esc(proj.name);
+        html += '<span class="resume-entry__title">' + titleHtml + '</span>';
+        html += '</div>';
+        if (proj.tech && proj.tech.length) {
+          html += '<div class="resume-entry__tech">';
+          for (var t = 0; t < proj.tech.length; t++) {
+            html += '<span>' + esc(proj.tech[t]) + '</span>';
+          }
+          html += '</div>';
+        }
+        if (proj.bullets && proj.bullets.length) {
+          html += '<ul class="resume-entry__bullets">';
+          for (var j = 0; j < proj.bullets.length; j++) {
+            html += '<li>' + esc(proj.bullets[j]) + '</li>';
+          }
+          html += '</ul>';
+        }
+        html += '</div>';
+      }
+      html += '</section>';
+      return html;
+    }
+
+    function renderSkills(skills) {
+      var html = '<section class="resume-section" aria-labelledby="resume-skills">';
+      html += '<h2 class="resume-section__heading" id="resume-skills">Skills</h2>';
+      html += '<div class="resume-skills-grid">';
+      for (var i = 0; i < skills.length; i++) {
+        var skill = skills[i];
+        html += '<div class="resume-skill-row">';
+        html += '<span class="resume-skill-row__label">' + esc(skill.category) + ':</span>';
+        html += '<span class="resume-skill-row__items">' + skill.items.map(esc).join(', ') + '</span>';
+        html += '</div>';
+      }
+      html += '</div>';
+      html += '</section>';
+      return html;
+    }
+
+    function render(data) {
+      var html = '';
+
+      html += '<header class="resume-header">';
+      html += '<h1 class="resume-header__name">' + esc(data.name) + '</h1>';
+      html += renderContact(data.contact);
+      html += '</header>';
+
+      html += renderExperience(data.experience);
+      html += renderProjects(data.projects);
+      html += renderEducation(data.education);
+      html += renderSkills(data.skills);
+
+      var el = document.getElementById('resume-content');
+      if (el) {
+        el.innerHTML = html;
+      }
+    }
+
+    function showError(msg) {
+      var el = document.getElementById('resume-content');
+      if (el) {
+        el.innerHTML = '<p class="resume-error">' + esc(msg) + '</p>';
+      }
+    }
+
+    render(RESUME_DATA);
+
+  }());
+  </script>
+
+</body>
+</html>

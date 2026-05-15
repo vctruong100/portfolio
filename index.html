@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <script>!function(){var t=localStorage.getItem("theme");if("dark"===t||"light"===t)document.documentElement.setAttribute("data-theme",t)}();</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="canonical" href="https://vctruong100.github.io/portfolio/">
@@ -73,6 +74,7 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="resume.html">Resume</a></li>
           <li>
             <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
               <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
@@ -117,6 +119,32 @@
         </header>
 
         <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-card__image">
+              <img
+                src="pictures/master-schedule/loginpage.png"
+                alt="Screenshot of the ClinSpark Master Schedule application showing the study table with milestone columns and inline editing"
+                width="800"
+                height="450"
+                loading="lazy"
+              >
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">ClinSpark Master Schedule</h3>
+              <p class="project-card__description">
+                A production-deployed full-stack scheduling platform for clinical trial coordinators, featuring a Gantt chart view, real-time multi-user presence with edit locking, role-based access, and a complete audit trail.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">TailwindCSS</span>
+              </div>
+              <a href="projects/clinspark-master-schedule/index.html" class="project-card__link">View Case Study</a>
+            </div>
+          </article>
 
           <article class="project-card">
             <div class="project-card__image">
@@ -297,8 +325,10 @@
             <h3 class="skill-category__title">Frameworks &amp; Libraries</h3>
             <div class="skill-category__list">
               <span class="tag">React / React Native</span>
+              <span class="tag">FastAPI</span>
               <span class="tag">Next.js</span>
               <span class="tag">Node.js / Express</span>
+              <span class="tag">TailwindCSS</span>
               <span class="tag">Tkinter</span>
               <span class="tag">pandas</span>
               <span class="tag">python-docx</span>
@@ -309,6 +339,9 @@
             <h3 class="skill-category__title">Tools &amp; Platforms</h3>
             <div class="skill-category__list">
               <span class="tag">Git / GitHub</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Cloudflare Pages</span>
+              <span class="tag">Render</span>
               <span class="tag">Figma</span>
               <span class="tag">AWS (EC2, RDS)</span>
               <span class="tag">MongoDB Atlas</span>
@@ -344,7 +377,7 @@
               I'm an Informatics graduate from the University of California, Irvine, with a focus on Human-Computer Interaction and user-centered design. I combine full-stack development skills with a strong UX sensibility to build tools that are both powerful and easy to use.
             </p>
             <p>
-              My recent work focuses on desktop automation and document processing tools used in clinical research environments. I enjoy turning tedious manual processes into reliable, one-click solutions — whether that's a Python desktop app, a browser userscript, or a data-processing pipeline.
+              My recent work spans full-stack web applications, desktop automation tools, and browser userscripts — all built for real-world clinical research environments. I enjoy turning tedious manual processes into reliable solutions, whether that's a React + FastAPI web platform, a Python desktop utility, or a Tampermonkey script that saves hours of clicking.
             </p>
             <p>
               When I'm not coding, I'm exploring design systems, learning new frameworks, or contributing to open-source projects. I'm always open to new opportunities and collaborations.
@@ -401,10 +434,6 @@
 
         <div class="contact__grid">
           <div class="contact__info">
-            <p>
-              I'm currently open to freelance work, full-time opportunities, and interesting collaborations. Feel free to reach out through the form or any of the channels below.
-            </p>
-
             <div class="contact__links">
               <a href="mailto:vctruong100@gmail.com" class="contact__link">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>

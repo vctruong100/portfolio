@@ -1,0 +1,99 @@
+{
+  "name": "Vinh Chieu Truong",
+  "contact": {
+    "email": "vctruong100@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/vinh-truong-224b93279/",
+    "github": "https://github.com/vctruong100",
+    "location": "Southern California"
+  },
+  "education": [
+    {
+      "school": "University of California, Irvine",
+      "degree": "B.S. in Informatics",
+      "location": "Irvine, CA",
+      "dates": "09.2021 – 06.2025",
+      "coursework": [
+        "Project Management",
+        "Human-Computer Interaction",
+        "Data Visualization",
+        "Databases",
+        "Web Applications"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Full Stack Developer",
+      "company": "ICS Scheduling — University of California, Irvine",
+      "sponsor": "Lumen & Sandy",
+      "location": "Irvine, CA",
+      "dates": "09.2024 – 03.2025",
+      "duration": "22 weeks",
+      "bullets": [
+        "Built a Next.js/TypeScript web app with a React drag-and-drop calendar for module scheduling.",
+        "Developed RESTful Node.js/Express APIs backed by MongoDB Atlas to manage courses, user roles, classrooms, modules, and messaging.",
+        "Ran Agile sprints: delivered bi-weekly demos, managed Git feature branches, and iterated on Figma wireframes."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "ClinSpark Master Schedule",
+      "caseStudy": "projects/clinspark-master-schedule/index.html",
+      "tech": ["React", "TypeScript", "FastAPI", "PostgreSQL", "TailwindCSS"],
+      "bullets": [
+        "Developed a production-deployed, full-stack scheduling platform for clinical trial e-source builders with real-time study tracking, Gantt chart visualization, role-based access control, and audit logging.",
+        "Built a React/TypeScript frontend with a FastAPI/PostgreSQL backend, implementing JWT authentication with HttpOnly cookies, edit-lock conflict prevention, and one-click Excel export workflows."
+      ]
+    },
+    {
+      "name": "Tampermonkey Automation Suite",
+      "caseStudy": "projects/tampermonkey-automator/index.html",
+      "tech": ["JavaScript", "Tampermonkey", "DOM Automation"],
+      "bullets": [
+        "Developed browser automation scripts across ClinSpark, Florence eBinder, and Microsoft Teams, automating multi-step data-entry workflows, eLog signing, and meeting attendance tracking.",
+        "Built resilient DOM automation using localStorage state machines, MutationObserver, and virtual-scroll scanning, reducing routine workflow time by approximately 60–70%."
+      ]
+    },
+    {
+      "name": "Fablix Movie DB Web Application",
+      "caseStudy": "projects/fablix-movie-db/index.html",
+      "tech": ["Java", "Tomcat", "MySQL", "REST APIs", "AWS", "jQuery"],
+      "bullets": [
+        "Developed a full-stack movie database with secure login, full-text search, and auto-complete.",
+        "Set up AWS instances, MySQL, and Tomcat, optimizing performance for handling thousands of movies."
+      ]
+    },
+    {
+      "name": "Spacetime Crawler",
+      "caseStudy": null,
+      "tech": ["Python"],
+      "bullets": [
+        "Developed a web crawler optimized for the ICS server, focusing on efficient data gathering and analysis.",
+        "Implemented unique page detection, subdomain mapping, and content analysis for comprehensive site exploration."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Languages",
+      "items": ["Python", "Java", "C++", "JavaScript", "TypeScript"]
+    },
+    {
+      "category": "Frameworks",
+      "items": ["React.js", "FastAPI", "Next.js", "Node.js", "Express", "TailwindCSS"]
+    },
+    {
+      "category": "Technologies",
+      "items": ["REST APIs", "PostgreSQL", "MongoDB", "MySQL", "AWS", "Tomcat", "Cloudflare Pages", "Render"]
+    },
+    {
+      "category": "Tools",
+      "items": ["Git", "VS Code", "Figma", "Microsoft Excel", "Google Workspace"]
+    },
+    {
+      "category": "Additional",
+      "items": ["Bilingual (English, Vietnamese)", "Fast learner", "Strong problem-solving", "Adaptable under pressure"]
+    }
+  ]
+}

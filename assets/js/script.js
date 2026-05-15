@@ -6,11 +6,23 @@
 
     if (saved === 'dark' || saved === 'light') {
       document.documentElement.setAttribute('data-theme', saved);
+      updateToggleLabel(saved);
       console.log('[theme] Restored saved preference:', saved);
       return;
     }
 
+    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    updateToggleLabel(prefersDark ? 'dark' : 'light');
     console.log('[theme] No saved preference, deferring to OS setting.');
+  }
+
+  function initThemeToggle() {
+    var btn = document.querySelector('.theme-toggle');
+    if (!btn) {
+      return;
+    }
+    btn.addEventListener('click', toggleTheme);
+    console.log('[theme] Toggle button bound.');
   }
 
   function toggleTheme() {
@@ -281,6 +293,7 @@
   function init() {
     console.log('[init] Portfolio scripts loading…');
     initTheme();
+    initThemeToggle();
     initMobileNav();
     initContactForm();
     updateCopyrightYear();

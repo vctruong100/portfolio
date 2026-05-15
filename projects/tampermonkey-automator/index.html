@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <script>!function(){var t=localStorage.getItem("theme");if("dark"===t||"light"===t)document.documentElement.setAttribute("data-theme",t)}();</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="canonical" href="https://vctruong100.github.io/portfolio/projects/tampermonkey-automator/">
   <title>Tampermonkey Automator — Vinh Truong</title>
@@ -54,6 +55,7 @@
           <li><a href="../../index.html#skills">Skills</a></li>
           <li><a href="../../index.html#about">About</a></li>
           <li><a href="../../index.html#contact">Contact</a></li>
+          <li><a href="../../resume.html">Resume</a></li>
           <li>
             <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
               <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
@@ -83,7 +85,7 @@
         <span>Platform: Browser (Chrome / Firefox / Edge)</span>
       </div>
       <p class="project-hero__summary">
-        A collection of Tampermonkey userscripts that automate repetitive data-entry tasks on a clinical trial management platform. The scripts handle multi-step form workflows, barcode scanning integration, batch processing of activity plans, and calculated field automation — turning hours of manual clicking into one-button operations.
+        A suite of Tampermonkey userscripts that eliminate repetitive manual workflows across three platforms used in clinical research: ClinSpark (trial management), Florence eBinder (electronic document signing), and Microsoft Teams (meeting attendance tracking). Each script injects a floating control panel into the host platform and automates multi-step operations that previously consumed hours of daily staff time.
       </p>
       <div class="project-hero__actions">
         <a href="https://github.com/vctruong100/Automator" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View Source Code</a>
@@ -106,7 +108,46 @@
     </section>
 
     <section class="project-section container">
-      <h2 class="project-section__title">Solution Overview</h2>
+      <h2 class="project-section__title">Platform Coverage</h2>
+      <div class="detail-grid">
+        <div class="detail-card">
+          <h3 class="detail-card__title">ClinSpark Automator</h3>
+          <p class="project-section" style="padding:0; border:none;">Targets the ClinSpark clinical trial management platform. Multiple specialized scripts handle different workflows:</p>
+          <ul>
+            <li><strong>Test Automator</strong> — full-featured script covering all study workflows (v3.8.7, ~1.5 MB)</li>
+            <li><strong>Lab Automator</strong> — focused on lab sample collection and processing</li>
+            <li><strong>Admin Automator</strong> — study setup, cohort configuration, and eligibility mapping</li>
+            <li><strong>Build Procedure</strong> — procedure log activity plan builder</li>
+            <li>20+ automated features per script; 65+ reusable calculation methods in Markdown</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Florence Automator</h3>
+          <p class="project-section" style="padding:0; border:none;">Targets Florence eBinder (<code>researchbinders.com</code>), a clinical document management platform used for electronic log book sign-offs.</p>
+          <ul>
+            <li>Batch eLog signing: scans all log entries and signs them on behalf of a selected team member</li>
+            <li>Handles Angular CDK virtual scroll viewports — progressively scrolls and scans large entry lists</li>
+            <li>Status tracking per entry: pending, found, not found, duplicate</li>
+            <li>Progress panel with live scan count and stop control</li>
+            <li>Robust retry logic for dynamically loaded content and <code>aria-busy</code> states</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Microsoft Teams Automator</h3>
+          <p class="project-section" style="padding:0; border:none;">Targets Microsoft Teams (<code>teams.microsoft.com</code>). Automates meeting attendance tracking during live sessions.</p>
+          <ul>
+            <li>Polls the participant panel at a configurable interval and records each attendee's first-seen timestamp</li>
+            <li>Tracks join order (page order) alongside alphabetical name for flexible reporting</li>
+            <li>Floating GUI with log output, sortable participant list, and scan counter</li>
+            <li>Configurable keyboard shortcut to toggle the panel</li>
+            <li>Persists GUI visibility and scale preferences via <code>localStorage</code></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">ClinSpark — Core Engine</h2>
       <div class="detail-grid">
         <div class="detail-card">
           <h3 class="detail-card__title">Core Automation Engine</h3>
@@ -158,6 +199,9 @@
         <span class="tag">localStorage</span>
         <span class="tag">MutationObserver</span>
         <span class="tag">GM_* APIs</span>
+        <span class="tag">GM.openInTab</span>
+        <span class="tag">GM.xmlHttpRequest</span>
+        <span class="tag">Virtual Scroll (CDK)</span>
       </div>
     </section>
 
@@ -165,16 +209,24 @@
       <h2 class="project-section__title">Screenshots</h2>
       <div class="project-gallery">
         <figure class="project-gallery__item">
-          <img src="../../pictures/tampermonkey/ClinSparkAutomatorpanel.png" alt="Floating control panel overlaying the clinical platform with a list of feature buttons" width="1200" height="675" loading="lazy">
-          <figcaption class="project-gallery__caption">Floating control panel with activity log</figcaption>
+          <img src="../../pictures/tampermonkey/ClinSparkAutomatorpanel.png" alt="Floating control panel overlaying the ClinSpark platform with a list of feature buttons" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">ClinSpark — floating control panel with activity log</figcaption>
         </figure>
         <figure class="project-gallery__item">
           <img src="../../pictures/tampermonkey/ClinSparkAutomator1.png" alt="Automator processing an activity plan form, showing field population in progress" width="1200" height="675" loading="lazy">
-          <figcaption class="project-gallery__caption">Importing Eligibility Mapping</figcaption>
+          <figcaption class="project-gallery__caption">ClinSpark — importing eligibility mapping</figcaption>
         </figure>
         <figure class="project-gallery__item">
-          <img src="../../pictures/tampermonkey/methodlibrary.png" alt="Method library documentation showing a BMI calculation method with code snippet" width="1200" height="675" loading="lazy">
-          <figcaption class="project-gallery__caption">Method library</figcaption>
+          <img src="../../pictures/tampermonkey/methodlibrary.png" alt="Method library documentation showing a calculation method with code snippet" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">ClinSpark — method library (65+ documented methods)</figcaption>
+        </figure>
+        <figure class="project-gallery__item">
+          <img src="../../pictures/tampermonkey/FlorenceAutomator.png" alt="Florence eBinder with the Automator panel showing eLog signing progress and status indicators" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Florence — eLog batch sign-off panel with per-entry status</figcaption>
+        </figure>
+        <figure class="project-gallery__item">
+          <img src="../../pictures/tampermonkey/MicrosoftTeamsAutomator.png" alt="Microsoft Teams with the attendance tracker panel showing participant list and first-seen timestamps" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Microsoft Teams — attendance tracker with join-order log</figcaption>
         </figure>
       </div>
     </section>
@@ -182,9 +234,11 @@
     <section class="project-section container">
       <h2 class="project-section__title">Challenges &amp; Solutions</h2>
       <ul>
-        <li><strong>Page reload persistence:</strong> The clinical platform uses full-page navigation for many actions. I built a localStorage-based state machine that survives reloads and resumes automation at the correct step.</li>
-        <li><strong>Dynamic DOM elements:</strong> Forms are loaded asynchronously via AJAX. The scripts use MutationObserver patterns and configurable retry delays to wait for elements before interacting.</li>
-        <li><strong>Platform updates:</strong> The target platform updates its UI periodically. Using semantic selectors (labels, data attributes) rather than fragile CSS class paths improved resilience.</li>
+        <li><strong>Page reload persistence (ClinSpark):</strong> The clinical platform uses full-page navigation for many actions. I built a localStorage-based state machine that survives reloads and resumes automation at the correct step.</li>
+        <li><strong>Dynamic DOM elements:</strong> Forms and lists are loaded asynchronously via AJAX. The scripts use MutationObserver patterns and configurable retry delays to wait for elements before interacting.</li>
+        <li><strong>Virtual scroll viewports (Florence):</strong> Florence eBinder renders log entries in an Angular CDK virtual scroll container — only visible rows exist in the DOM. I implemented a progressive scroll-and-scan loop with <code>aria-busy</code> detection and retry logic to ensure every entry is seen before marking the scan complete.</li>
+        <li><strong>Teams DOM instability (Microsoft):</strong> Microsoft Teams' React-rendered DOM can re-mount the participant panel during navigation. I used a re-parent observer and debounced initialization to re-attach the GUI whenever Teams rebuilds its component tree.</li>
+        <li><strong>Platform updates:</strong> Target platforms update their UI periodically. Using semantic selectors (labels, data attributes, ARIA roles) rather than fragile CSS class paths improved resilience across versions.</li>
         <li><strong>Error recovery:</strong> Network timeouts and unexpected modal dialogs required a pause-and-retry mechanism with clear user feedback through the log panel.</li>
       </ul>
     </section>
@@ -192,11 +246,13 @@
     <section class="project-section container">
       <h2 class="project-section__title">Outcomes &amp; Impact</h2>
       <ul>
-        <li>Reduced daily data-entry time by approximately 60–70% for routine workflows.</li>
+        <li>Reduced daily ClinSpark data-entry time by approximately 60–70% for routine study workflows.</li>
         <li>Eliminated transcription errors in calculated fields (BMI, blood pressure averages, QTcF).</li>
+        <li>Florence eLog sign-offs that required individually clicking through every log entry now run automatically in the background.</li>
+        <li>Meeting attendance tracking in Teams, previously done manually, is now captured with exact first-seen timestamps and exportable join-order lists.</li>
         <li>65+ reusable calculation methods documented in Markdown for team reference.</li>
         <li>Scripts are self-updating via raw GitHub URLs, keeping all users on the latest version.</li>
-        <li>Adopted by multiple team members across different study protocols.</li>
+        <li>Adopted by multiple team members across different study protocols and platforms.</li>
       </ul>
     </section>
 
