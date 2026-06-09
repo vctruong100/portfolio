@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>!function(){var t=localStorage.getItem("theme");if("dark"===t||"light"===t)document.documentElement.setAttribute("data-theme",t)}();</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://vctruong100.github.io/portfolio/projects/curriculum-vitae-web/">
+  <title>Curriculum Vitae Web — Vinh Truong</title>
+  <meta name="description" content="A full-stack web application for managing CV Research Experience sections, built with FastAPI, PostgreSQL, React, and TailwindCSS.">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Curriculum Vitae Web — Case Study">
+  <meta property="og:description" content="Full-stack web app for managing CV Research Experience sections with role-based access, real-time collaboration, and document processing.">
+  <meta property="og:image" content="https://vctruong100.github.io/portfolio/assets/images/project-cv-web-thumb.jpg">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "CenExel Study Hub",
+    "description": "A web-based research experience tracking application for clinical trial teams.",
+    "programmingLanguage": ["Python", "TypeScript"],
+    "author": {
+      "@type": "Person",
+      "name": "Vinh Chieu Truong"
+    },
+    "codeRepository": "https://github.com/vctruong100/Curriculum-Vitae-Web"
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="../../index.html" class="site-logo" aria-label="Vinh Truong — Home">VT</a>
+      <nav aria-label="Primary navigation">
+        <noscript>
+          <style>.nav-toggle { display: none !important; } .nav-list { position: static !important; transform: none !important; flex-direction: row !important; flex-wrap: wrap !important; box-shadow: none !important; border: none !important; padding: 0 !important; }</style>
+        </noscript>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="primary-nav" class="nav-list" role="list">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../index.html#projects">Projects</a></li>
+          <li><a href="../../index.html#skills">Skills</a></li>
+          <li><a href="../../index.html#about">About</a></li>
+          <li><a href="../../index.html#contact">Contact</a></li>
+          <li><a href="../../resume.html">Resume</a></li>
+          <li>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+              <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../index.html#projects">Projects</a></li>
+        <li><span aria-current="page">Curriculum Vitae Web</span></li>
+      </ol>
+    </nav>
+
+    <section class="project-hero container">
+      <h1 class="project-hero__title">Curriculum Vitae Web</h1>
+      <div class="project-hero__meta">
+        <span>Role: Solo Developer</span>
+        <span>Timeline: 2024–Present</span>
+        <span>Platform: Web (Cloudflare Pages + Render)</span>
+      </div>
+      <p class="project-hero__summary">
+        A full-stack web application that replaces the original desktop-only CV Manager with a multi-user, browser-based platform. Clinical trial teams can manage research experience across multiple sites, process documents, and collaborate in real time — all with role-based access control and a complete audit trail.
+      </p>
+      <div class="project-hero__actions">
+        <a href="https://github.com/vctruong100/Curriculum-Vitae-Web" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View Source Code</a>
+        <a href="#" class="btn btn--secondary" aria-disabled="true">Live Demo (Internal)</a>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">The Problem</h2>
+      <p>
+        The original desktop CV Manager worked well for individual users, but clinical research organizations needed a collaborative solution:
+      </p>
+      <ul>
+        <li>Multiple coordinators needed simultaneous access to the same study database.</li>
+        <li>Admins needed to control which users could view or edit each clinical site.</li>
+        <li>Document processing (Update/Inject, Redact) had to work in a browser without installing Python.</li>
+        <li>All changes needed to be audit-logged for compliance.</li>
+        <li>The system needed to be accessible from any device without client installation.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Solution Overview</h2>
+      <div class="detail-grid">
+        <div class="detail-card">
+          <h3 class="detail-card__title">Multi-User Sites &amp; Studies</h3>
+          <ul>
+            <li>Per-site study databases with full CRUD operations</li>
+            <li>Import/export between Excel and the web database</li>
+            <li>Search, filter, and category-based grouping</li>
+            <li>Compressed study descriptions to minimize database footprint</li>
+            <li>Per-user category ordering and display preferences</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Document Processing</h3>
+          <ul>
+            <li>Browser-based Update/Inject — uploads .docx and .xlsx, returns processed document</li>
+            <li>Redact Protocols — server-side protocol detection and masking</li>
+            <li>Parses Word documents using the same proven logic as the desktop app</li>
+            <li>Preserves all original formatting in the returned .docx</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Access Control &amp; Security</h3>
+          <ul>
+            <li>JWT-based authentication with access and refresh tokens</li>
+            <li>PBKDF2-SHA256 password hashing with brute-force rate limiting</li>
+            <li>Role-based tabs: Admin, Editor, Viewer with per-view permissions</li>
+            <li>Site-level access: admins grant <code>view</code> or <code>edit</code> per user per site</li>
+            <li>Global IP rate limiting and per-user processing rate limits</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Admin &amp; Operations</h3>
+          <ul>
+            <li>User CRUD, role assignment, and password reset</li>
+            <li>Live presence bar showing active users (admin-only)</li>
+            <li>Audit trail of every write action with user, timestamp, and changed values</li>
+            <li>Rotating auto-backups plus on-demand manual backup/restore</li>
+            <li>Forward-only schema migrations applied automatically on startup</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Tech Stack</h2>
+      <div class="tech-stack">
+        <span class="tag">Python 3.11+</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">psycopg (async)</span>
+        <span class="tag">PostgreSQL (Neon)</span>
+        <span class="tag">React 18</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Vite</span>
+        <span class="tag">TailwindCSS</span>
+        <span class="tag">Zustand</span>
+        <span class="tag">Cloudflare Pages</span>
+        <span class="tag">Render</span>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Screenshots</h2>
+      <div class="project-gallery">
+        <figure class="project-gallery__item">
+          <img src="../../pictures/curriculum-vitae-web/Sites Dashboard.png" alt="Web application showing the Sites Dashboard with a list of clinical sites and study counts" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Sites Dashboard — list of clinical sites with study counts and search</figcaption>
+        </figure>
+        <figure class="project-gallery__item">
+          <img src="../../pictures/curriculum-vitae-web/Study Browser.png" alt="Web application showing the Study Browser with studies grouped by phase and subcategory" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Study Browser — studies grouped by phase and subcategory with inline editing</figcaption>
+        </figure>
+        <figure class="project-gallery__item">
+          <img src="../../pictures/curriculum-vitae-web/Update and Inject.png" alt="Web application showing the Update and Inject document processing view" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Update and Inject — server-side document processing with file upload and preview</figcaption>
+        </figure>
+        <figure class="project-gallery__item">
+          <img src="../../pictures/curriculum-vitae-web/Redact Protocols.png" alt="Web application showing the Redact Protocols view for masking sensitive study information" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Redact Protocols — protocol number masking for blinded regulatory submissions</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Challenges &amp; Solutions</h2>
+      <ul>
+        <li><strong>Server-side document processing:</strong> The desktop app's python-docx logic had to run safely on the server. I isolated the processing layer in FastAPI endpoints with strict input validation, rate limiting, and temporary file cleanup.</li>
+        <li><strong>Compressed study storage:</strong> Study descriptions can be lengthy. I implemented zlib compression on description fields before database storage, cutting row size significantly without sacrificing query performance.</li>
+        <li><strong>Role-based tab routing:</strong> Different roles see different views. I built a <code>TabRoute</code> component that checks role permissions and redirects unauthorized users to their first allowed view.</li>
+        <li><strong>JWT refresh without flashing:</strong> Early attempts caused 401 → logout cascades. I carefully sequenced the theme sync and auth refresh effects so the app validates tokens before any authenticated API calls.</li>
+        <li><strong>Stateless backend design:</strong> Every request is fully stateless — no server-side sessions beyond JWT validation. This simplifies horizontal scaling and keeps the deployment on Render's free tier viable.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Outcomes &amp; Impact</h2>
+      <ul>
+        <li>Migrated a solo desktop tool into a collaborative web platform with zero client installation.</li>
+        <li>Reduced per-CV processing time from 30–60 minutes to under 2 minutes via server-side document automation.</li>
+        <li>Enabled real-time multi-user access to study databases with granular site-level permissions.</li>
+        <li>Complete audit trail satisfies compliance requirements for clinical research environments.</li>
+        <li>Successfully deployed for internal use with Cloudflare Pages (frontend) and Render (backend).</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Lessons Learned</h2>
+      <ul>
+        <li>Reusing the desktop app's parsing and processing logic saved weeks of development, but required careful sandboxing for server-side execution.</li>
+        <li>Async PostgreSQL with psycopg v3 and connection pooling is essential for FastAPI — naive synchronous DB access quickly bottlenecks under concurrent users.</li>
+        <li>JWT refresh logic in SPAs is subtle; the order of effect hooks and API interceptors matters enormously for avoiding logout cascades on app startup.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Future Improvements</h2>
+      <ul>
+        <li>Batch document processing for multiple CVs at once.</li>
+        <li>In-browser diff viewer comparing uploaded and processed documents.</li>
+        <li>Email notifications for pending protocol redactions or audit alerts.</li>
+        <li>Dark mode persistence synced across devices via user preferences API.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p>&copy; <span data-year>2025</span> Vinh Chieu Truong. All rights reserved.</p>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="https://www.linkedin.com/in/vinh-truong-224b93279/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/vctruong100" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:vctruong100@gmail.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/script.js" defer></script>
+</body>
+</html>

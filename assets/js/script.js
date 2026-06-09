@@ -290,6 +290,87 @@
     }
   }
 
+  function initLightbox() {
+    var overlay = document.createElement('div');
+    overlay.className = 'lightbox-overlay';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.setAttribute('aria-label', 'Image preview');
+    overlay.innerHTML =
+      '<div class="lightbox-overlay__inner">' +
+        '<button class="lightbox-close" aria-label="Close image preview">&times;</button>' +
+        '<img src="" alt="">' +
+        '<p class="lightbox-overlay__caption"></p>' +
+      '</div>';
+    document.body.appendChild(overlay);
+
+    var inner = overlay.querySelector('.lightbox-overlay__inner');
+    var img = overlay.querySelector('img');
+    var caption = overlay.querySelector('.lightbox-overlay__caption');
+    var closeBtn = overlay.querySelector('.lightbox-close');
+    var lastFocused = null;
+
+    function open(src, alt, cap) {
+      lastFocused = document.activeElement;
+      img.src = src;
+      img.alt = alt || '';
+      caption.textContent = cap || '';
+      overlay.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+      closeBtn.focus();
+      console.log('[lightbox] Opened:', src);
+    }
+
+    function close() {
+      overlay.classList.remove('is-open');
+      document.body.style.overflow = '';
+      img.src = '';
+      if (lastFocused) {
+        lastFocused.focus();
+      }
+      console.log('[lightbox] Closed.');
+    }
+
+    closeBtn.addEventListener('click', close);
+
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay || e.target === inner) {
+        close();
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && overlay.classList.contains('is-open')) {
+        e.preventDefault();
+        close();
+      }
+    });
+
+    var selectors = [
+      '.project-card__image img',
+      '.project-gallery__item img'
+    ];
+
+    selectors.forEach(function (sel) {
+      var images = document.querySelectorAll(sel);
+      for (var i = 0; i < images.length; i++) {
+        images[i].addEventListener('click', function () {
+          var fig = this.closest('figure');
+          var capText = '';
+          if (fig) {
+            var capEl = fig.querySelector('.project-gallery__caption');
+            if (capEl) {
+              capText = capEl.textContent;
+            }
+          }
+          open(this.getAttribute('src'), this.getAttribute('alt'), capText);
+        });
+      }
+    });
+
+    console.log('[lightbox] Initialized for', document.querySelectorAll('.project-card__image img, .project-gallery__item img').length, 'image(s).');
+  }
+
   function init() {
     console.log('[init] Portfolio scripts loading…');
     initTheme();
@@ -299,6 +380,7 @@
     updateCopyrightYear();
     initHeaderScroll();
     initSmoothScroll();
+    initLightbox();
     console.log('[init] All modules ready.');
   }
 

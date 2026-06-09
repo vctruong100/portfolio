@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect x="80" y="40" width="640" height="370" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <rect x="80" y="40" width="640" height="32" rx="8" fill="#0f172a"/>
+  <rect x="84" y="40" width="632" height="32" rx="6" fill="#0f172a"/>
+  <circle cx="104" cy="56" r="6" fill="#ef4444" opacity="0.8"/>
+  <circle cx="122" cy="56" r="6" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="140" cy="56" r="6" fill="#22c55e" opacity="0.8"/>
+  <text x="400" y="62" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#94a3b8">CenExel Study Hub — Sites</text>
+  <rect x="100" y="86" width="600" height="36" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="115" y="109" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#e2e8f0">Sites</text>
+  <text x="170" y="109" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#94a3b8">CV View</text>
+  <text x="240" y="109" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#94a3b8">Compare</text>
+  <text x="310" y="109" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#94a3b8">Browse</text>
+  <rect x="560" y="92" width="120" height="24" rx="4" fill="#2563eb"/>
+  <text x="620" y="108" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#fff">+ New Site</text>
+  <rect x="100" y="134" width="280" height="28" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="115" y="153" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#94a3b8">Search sites...</text>
+  <rect x="100" y="174" width="600" height="40" rx="4" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="115" y="200" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">ACT La Palma</text>
+  <text x="500" y="200" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#64748b">142 studies</text>
+  <rect x="100" y="222" width="600" height="40" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="115" y="248" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">ACT Anaheim</text>
+  <text x="500" y="248" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#64748b">89 studies</text>
+  <rect x="100" y="270" width="600" height="40" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="115" y="296" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">Genesis — Los Angeles</text>
+  <text x="500" y="296" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#64748b">203 studies</text>
+  <text x="400" y="430" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#475569" font-style="italic">Screenshot coming soon</text>
+</svg>
