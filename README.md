@@ -17,10 +17,20 @@ portfolio/
 │   └── images/
 │       └── placeholder.txt                     # Image specs & naming guide
 ├── projects/
+│   ├── clinspark-master-schedule/
+│   │   └── index.html                          # ClinSpark Master Schedule
+│   ├── protocol-compiler/
+│   │   └── index.html                          # Protocol Compiler
+│   ├── curriculum-vitae-web/
+│   │   └── index.html                          # Curriculum Vitae Web
 │   ├── cv-manager/
 │   │   └── index.html                          # Curriculum Vitae Manager
 │   ├── tampermonkey-automator/
 │   │   └── index.html                          # Tampermonkey Automator
+│   ├── florence-extension/
+│   │   └── index.html                          # Florence Extension
+│   ├── vinhs-automator/
+│   │   └── index.html                          # Vinh's Automations
 │   ├── workplace-efficiency-scripts/
 │   │   └── index.html                          # Workplace Efficiency Scripts
 │   ├── ics-scheduler/

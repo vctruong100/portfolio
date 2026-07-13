@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>!function(){var t=localStorage.getItem("theme");if("dark"===t||"light"===t)document.documentElement.setAttribute("data-theme",t)}();</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://vctruong100.github.io/portfolio/projects/florence-extension/">
+  <title>Florence Extension — Vinh Truong</title>
+  <meta name="description" content="A Manifest V3 browser extension that adds a workflow automation sidebar to Florence eBinder / Research Binders.">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Florence Extension — Case Study">
+  <meta property="og:description" content="MV3 browser extension for automating repetitive Florence eBinder workflows from a right-side sidebar.">
+  <meta property="og:image" content="https://vctruong100.github.io/portfolio/assets/images/project-florence-extension-thumb.jpg">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Florence Extension",
+    "description": "A Manifest V3 browser extension that adds a right-side workflow automation sidebar to Florence eBinder / Research Binders.",
+    "programmingLanguage": ["JavaScript"],
+    "author": {
+      "@type": "Person",
+      "name": "Vinh Chieu Truong"
+    },
+    "codeRepository": "https://github.com/vctruong100/Florence-Extension"
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="../../index.html" class="site-logo" aria-label="Vinh Truong — Home">VT</a>
+      <nav aria-label="Primary navigation">
+        <noscript>
+          <style>.nav-toggle { display: none !important; } .nav-list { position: static !important; transform: none !important; flex-direction: row !important; flex-wrap: wrap !important; box-shadow: none !important; border: none !important; padding: 0 !important; }</style>
+        </noscript>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="primary-nav" class="nav-list" role="list">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../index.html#projects">Projects</a></li>
+          <li><a href="../../index.html#skills">Skills</a></li>
+          <li><a href="../../index.html#about">About</a></li>
+          <li><a href="../../index.html#contact">Contact</a></li>
+          <li><a href="../../resume.html">Resume</a></li>
+          <li>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+              <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../index.html#projects">Projects</a></li>
+        <li><span aria-current="page">Florence Extension</span></li>
+      </ol>
+    </nav>
+
+    <section class="project-hero container">
+      <h1 class="project-hero__title">Florence Extension</h1>
+      <div class="project-hero__meta">
+        <span>Role: Solo Developer</span>
+        <span>Timeline: Ongoing (2025–Present)</span>
+        <span>Platform: Browser (Chrome / Edge)</span>
+      </div>
+      <p class="project-hero__summary">
+        A Manifest V3 browser extension that injects a right-side workflow sidebar into Florence eBinder / Research Binders. It lets authorized users automate repetitive document-log sign-offs, training-log entries, and study workflow tasks directly from the browser — with persistent settings, progress feedback, and no remote code execution.
+      </p>
+      <div class="project-hero__actions">
+        <a href="https://github.com/vctruong100/Florence-Extension" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View Source Code</a>
+        <a href="#" class="btn btn--secondary" aria-disabled="true">Chrome Web Store (Pending)</a>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">The Problem</h2>
+      <p>
+        Florence eBinder (Research Binders) is used to manage electronic document logs, training logs, and study-team workflows. Many high-volume actions require repetitive clicks through large virtual-scroll lists with no built-in batch operations:
+      </p>
+      <ul>
+        <li>Document log sign-offs must be applied to every entry one at a time.</li>
+        <li>Angular CDK virtual scroll lists render only visible rows, making manual batch work tedious.</li>
+        <li>Userscripts run in a restricted Tampermonkey sandbox and do not integrate cleanly with extension storage or lifecycle.</li>
+        <li>Repetitive form filling across logs depends on remembering context between page loads.</li>
+        <li>Chrome Web Store review requires clear privacy disclosures, limited host permissions, and no remote code.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Solution Overview</h2>
+      <div class="detail-grid">
+        <div class="detail-card">
+          <h3 class="detail-card__title">Right-Side Sidebar</h3>
+          <ul>
+            <li>Fixed sidebar docked to the right edge of Research Binders pages</li>
+            <li>360 px right offset applied to the host page so content is not covered</li>
+            <li>Toggle visibility with a configurable keybind (default F2)</li>
+            <li>Draggable, theme-aware UI with start/pause/stop controls</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Document Log Automation</h3>
+          <ul>
+            <li>Progressive scroll-and-scan loop handles Angular CDK virtual scroll viewports</li>
+            <li>Status tracking per entry: pending, found, not found, duplicate</li>
+            <li>Configurable scan step, settle delays, retry attempts, and timeout ceilings</li>
+            <li>Respects <code>aria-busy</code> states to avoid interacting during loading</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Form Filling &amp; Workflows</h3>
+          <ul>
+            <li>Automated member selection from dynamic filtered dropdowns</li>
+            <li>Retry logic for option rendering, virtual scroll lists, and save confirmation</li>
+            <li>User-entered Study Library and Training Log state persisted across reloads</li>
+            <li>Clipboard helpers for copying generated workflow text</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Manifest V3 Compliance</h3>
+          <ul>
+            <li>All code bundled in the extension; no remote code execution</li>
+            <li>Host permission limited to <code>https://us.v2.researchbinders.com/*</code></li>
+            <li>Storage permission used only for local settings and user-entered workflow data</li>
+            <li>Privacy policy, data-disclosure answers, and reviewer test instructions prepared</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Settings &amp; Configuration</h3>
+          <ul>
+            <li>Keybind customization to show/hide the sidebar</li>
+            <li>Button reordering and visibility toggles</li>
+            <li>Log panel show/hide and theme mode preferences</li>
+            <li>Settings stored in <code>chrome.storage.local</code> and host-origin localStorage where appropriate</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">State Management</h3>
+          <ul>
+            <li>Run modes and progress survive page reloads via localStorage</li>
+            <li>Pause/resume checks at the start of every process function</li>
+            <li>Popups restored automatically across navigations</li>
+            <li>Robust teardown that clears timers, observers, and idle callbacks</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Tech Stack</h2>
+      <div class="tech-stack">
+        <span class="tag">JavaScript (ES6)</span>
+        <span class="tag">Chrome Extension API</span>
+        <span class="tag">Manifest V3</span>
+        <span class="tag">Content Script</span>
+        <span class="tag">MutationObserver</span>
+        <span class="tag">Virtual Scroll (CDK)</span>
+        <span class="tag">chrome.storage.local</span>
+        <span class="tag">DOM Automation</span>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Screenshots</h2>
+      <div class="project-gallery">
+        <figure class="project-gallery__item">
+          <img src="../../pictures/florence-extension/sidebar.png" alt="Florence Extension sidebar docked on the right side of a Research Binders page showing workflow buttons" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Extension sidebar docked on a Research Binders page</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Challenges &amp; Solutions</h2>
+      <ul>
+        <li><strong>Virtual scroll lists:</strong> Florence renders only visible rows in the DOM. I built a scroll-and-scan loop with configurable viewport overscan and settle delays, then re-scans until no new entries appear.</li>
+        <li><strong>Dynamic dropdowns:</strong> Team-member dropdowns use Angular filtered selects with virtual viewports. The extension waits for the list, filters, scrolls, and retries option selection with explicit save-success detection.</li>
+        <li><strong>Extension sandbox vs. userscript APIs:</strong> <code>GM.xmlHttpRequest</code> is unavailable in MV3 content scripts. The code uses standard <code>fetch</code> for same-origin requests and falls back transparently when running as a userscript.</li>
+        <li><strong>State across full-page navigations:</strong> Research Binders uses full-page navigation, so automation state is persisted in <code>localStorage</code> and resumes through URL-run-mode routing on page load.</li>
+        <li><strong>Chrome Web Store review readiness:</strong> I prepared a privacy policy, limited host permissions, documented data collection, and included reviewer test instructions so the extension can pass review without public access to the platform.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Outcomes &amp; Impact</h2>
+      <ul>
+        <li>Migrates the Florence Automator userscript into a managed browser extension with proper lifecycle and storage.</li>
+        <li>Reduces document-log sign-off workflows from hundreds of individual clicks to a single scan-and-confirm operation.</li>
+        <li>Maintains the same defensive automation patterns (retries, pause/resume, logging) while satisfying MV3 restrictions.</li>
+        <li>Provides a cleaner install/update path through the Chrome Web Store compared to userscript managers.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Lessons Learned</h2>
+      <ul>
+        <li>Manifest V3 forces explicit permission design; limiting host access to one origin is both more secure and easier to justify to reviewers.</li>
+        <li>Content scripts cannot rely on userscript globals like <code>GM.*</code>; plan for standard web APIs from the start when targeting an extension.</li>
+        <li>Virtual-scroll automation benefits from a clear "end-of-list" detection rather than scrolling a fixed number of times.</li>
+        <li>Preparing privacy disclosures and test instructions early prevents last-minute submission blockers.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Future Improvements</h2>
+      <ul>
+        <li>Background service-worker support for long-running workflows across tabs.</li>
+        <li>Export of automation logs to CSV for audit documentation.</li>
+        <li>Dark-mode styling that follows the Research Binders theme automatically.</li>
+        <li>Keyboard-only navigation for accessibility.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p>&copy; <span data-year>2025</span> Vinh Chieu Truong. All rights reserved.</p>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="https://www.linkedin.com/in/vinh-truong-224b93279/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/vctruong100" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:vctruong100@gmail.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/script.js" defer></script>
+</body>
+</html>

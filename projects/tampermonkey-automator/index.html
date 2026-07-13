@@ -85,7 +85,7 @@
         <span>Platform: Browser (Chrome / Firefox / Edge)</span>
       </div>
       <p class="project-hero__summary">
-        A suite of Tampermonkey userscripts that eliminate repetitive manual workflows across three platforms used in clinical research: ClinSpark (trial management), Florence eBinder (electronic document signing), and Microsoft Teams (meeting attendance tracking). Each script injects a floating control panel into the host platform and automates multi-step operations that previously consumed hours of daily staff time.
+        A suite of Tampermonkey userscripts that eliminate repetitive manual workflows across three platforms used in clinical research: ClinSpark (trial management), Florence eBinder / Research Binders (electronic document signing), and Microsoft Teams (meeting attendance tracking). Each script injects a floating control panel into the host platform and automates multi-step operations that previously consumed hours of daily staff time. The Florence Automator logic has since been migrated into a standalone Manifest V3 browser extension.
       </p>
       <div class="project-hero__actions">
         <a href="https://github.com/vctruong100/Automator" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View Source Code</a>
@@ -114,11 +114,12 @@
           <h3 class="detail-card__title">ClinSpark Automator</h3>
           <p class="project-section" style="padding:0; border:none;">Targets the ClinSpark clinical trial management platform. Multiple specialized scripts handle different workflows:</p>
           <ul>
-            <li><strong>Test Automator</strong> — full-featured script covering all study workflows (v3.8.7, ~1.5 MB)</li>
+            <li><strong>Test Automator</strong> — full-featured script covering all study workflows (v3.8.7, ~1.9 MB)</li>
+            <li><strong>ClinSpark Automator</strong> — production deployment covering routine study operations</li>
             <li><strong>Lab Automator</strong> — focused on lab sample collection and processing</li>
             <li><strong>Admin Automator</strong> — study setup, cohort configuration, and eligibility mapping</li>
             <li><strong>Build Procedure</strong> — procedure log activity plan builder</li>
-            <li>20+ automated features per script; 65+ reusable calculation methods in Markdown</li>
+            <li>20+ automated features per script; 85+ documented calculation methods in the shared methods library</li>
           </ul>
         </div>
         <div class="detail-card">
@@ -130,6 +131,7 @@
             <li>Status tracking per entry: pending, found, not found, duplicate</li>
             <li>Progress panel with live scan count and stop control</li>
             <li>Robust retry logic for dynamically loaded content and <code>aria-busy</code> states</li>
+            <li>Migrated into a Manifest V3 browser extension for managed install/update and Chrome Web Store distribution</li>
           </ul>
         </div>
         <div class="detail-card">
@@ -181,10 +183,10 @@
         <div class="detail-card">
           <h3 class="detail-card__title">Method Library</h3>
           <ul>
-            <li>65+ documented calculation methods for clinical data</li>
-            <li>Methods for vitals, ECG, lab panels, and dosing checks</li>
-            <li>Reusable across different study protocols</li>
-            <li>Markdown documentation for each method's logic</li>
+            <li>85+ documented calculation and validation methods for clinical data</li>
+            <li>Methods for vitals, ECG, lab panels, dosing checks, edit checks, and date windows</li>
+            <li>Reusable across different study protocols and shared across scripts</li>
+            <li>Markdown documentation and a JSON index for discovery and updates</li>
           </ul>
         </div>
       </div>
@@ -246,8 +248,9 @@
         <li>Eliminated transcription errors in calculated fields (BMI, blood pressure averages, QTcF).</li>
         <li>Florence eLog sign-offs that required individually clicking through every log entry now run automatically in the background.</li>
         <li>Meeting attendance tracking in Teams, previously done manually, is now captured with exact first-seen timestamps and exportable join-order lists.</li>
-        <li>65+ reusable calculation methods documented in Markdown for team reference.</li>
+        <li>85+ reusable calculation and validation methods documented in Markdown and indexed in JSON for team reference.</li>
         <li>Scripts are self-updating via raw GitHub URLs, keeping all users on the latest version.</li>
+        <li>Florence Automator userscript logic migrated to a Manifest V3 browser extension for cleaner lifecycle management.</li>
         <li>Adopted by multiple team members across different study protocols and platforms.</li>
       </ul>
     </section>
@@ -264,8 +267,8 @@
     <section class="project-section container">
       <h2 class="project-section__title">Future Improvements</h2>
       <ul>
-        <li>Migration to a browser extension for better lifecycle management and permissions.</li>
         <li>Configuration UI for per-study method selection instead of code-level customization.</li>
+        <li>Expand the browser-extension pattern to ClinSpark Automator and Microsoft Teams Automator.</li>
         <li>Export of automation logs to CSV for audit trail documentation.</li>
         <li>Dry-run mode that previews all actions without executing them.</li>
       </ul>

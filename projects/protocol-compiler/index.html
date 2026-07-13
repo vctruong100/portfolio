@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>!function(){var t=localStorage.getItem("theme");if("dark"===t||"light"===t)document.documentElement.setAttribute("data-theme",t)}();</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://vctruong100.github.io/portfolio/projects/protocol-compiler/">
+  <title>Protocol Compiler — Vinh Truong</title>
+  <meta name="description" content="A production-grade system that decompiles clinical trial protocol PDFs into structured E-Source and CDISC study configurations.">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Protocol Compiler — Case Study">
+  <meta property="og:description" content="AI-driven protocol decompilation into visits, forms, fields, edit checks, and CDISC-ready exports.">
+  <meta property="og:image" content="https://vctruong100.github.io/portfolio/assets/images/project-protocol-compiler-thumb.jpg">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Protocol Compiler",
+    "description": "A production-grade system that decompiles clinical trial protocol PDFs into structured E-Source and CDISC study configurations using AI-driven extraction and rule-based mapping.",
+    "programmingLanguage": ["Python", "TypeScript"],
+    "author": {
+      "@type": "Person",
+      "name": "Vinh Chieu Truong"
+    },
+    "codeRepository": "https://github.com/vctruong100/Protocol-Compiler"
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="../../index.html" class="site-logo" aria-label="Vinh Truong — Home">VT</a>
+      <nav aria-label="Primary navigation">
+        <noscript>
+          <style>.nav-toggle { display: none !important; } .nav-list { position: static !important; transform: none !important; flex-direction: row !important; flex-wrap: wrap !important; box-shadow: none !important; border: none !important; padding: 0 !important; }</style>
+        </noscript>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="primary-nav" class="nav-list" role="list">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../index.html#projects">Projects</a></li>
+          <li><a href="../../index.html#skills">Skills</a></li>
+          <li><a href="../../index.html#about">About</a></li>
+          <li><a href="../../index.html#contact">Contact</a></li>
+          <li><a href="../../resume.html">Resume</a></li>
+          <li>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+              <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../index.html#projects">Projects</a></li>
+        <li><span aria-current="page">Protocol Compiler</span></li>
+      </ol>
+    </nav>
+
+    <section class="project-hero container">
+      <h1 class="project-hero__title">Protocol Compiler</h1>
+      <div class="project-hero__meta">
+        <span>Role: Solo Developer</span>
+        <span>Timeline: Ongoing (2025–Present)</span>
+        <span>Platform: Web</span>
+      </div>
+      <p class="project-hero__summary">
+        A production-grade system that decompiles clinical trial protocol PDFs into the structured data needed to build E-Source systems, CDISC-compliant study configurations, eSource forms, and annotated CRF exports. It combines AI-driven extraction with deterministic validation, rule-based mapping, and human-review gating.
+      </p>
+      <div class="project-hero__actions">
+        <a href="https://github.com/vctruong100/Protocol-Compiler" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View Source Code</a>
+        <a href="#" class="btn btn--secondary" aria-disabled="true">Private Repository</a>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">The Problem</h2>
+      <p>
+        Building an electronic data-capture system for a clinical study starts with a protocol PDF — often hundreds of pages containing visits, procedures, eligibility criteria, and complex edit checks. Manually translating that document into study-build artifacts is slow, error-prone, and inconsistent:
+      </p>
+      <ul>
+        <li>Visits, forms, and fields are buried in narrative text and tables.</li>
+        <li>Numeric ranges, temporal windows, and allowed values vary by study and are easy to miss.</li>
+        <li>CDISC/CDASH conventions must be applied consistently across dozens of domains.</li>
+        <li>Low-confidence AI extractions can silently introduce fabricated entities.</li>
+        <li>Collaborators need shared workspaces with clear roles, not isolated owner-only access.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Solution Overview</h2>
+      <div class="detail-grid">
+        <div class="detail-card">
+          <h3 class="detail-card__title">PDF Ingestion &amp; Parsing</h3>
+          <ul>
+            <li>Magic-bytes validation rejects non-PDFs, corrupted files, and password-protected uploads</li>
+            <li>PyMuPDF + pdfplumber extract plain text, tables, and visit-schedule matrices</li>
+            <li>Page classification (text / image / mixed) with optional OCR fallback for scanned protocols</li>
+            <li>Raw text and tables persisted for transparent debugging and provenance</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">AI-Driven Extraction</h3>
+          <ul>
+            <li>Multi-pass focused prompting: visits, forms, item groups, fields, code lists, edit checks</li>
+            <li>Provider-agnostic LLM backend: OpenAI, Groq, Gemini, Ollama, or mock for testing</li>
+            <li>Per-entity confidence scores with source grounding (span, chunk, page reference)</li>
+            <li>Centralized rate limiting, daily quotas, retries, and provider failover</li>
+            <li>Deterministic response cache for quota-free reruns</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Generalized Constraint Extraction</h3>
+          <ul>
+            <li>Deterministic scan for numeric ranges, thresholds, and temporal windows</li>
+            <li>Allowed categorical values and sample/storage/dosing constraints</li>
+            <li>Constraints linked to matching entities; unmatched ones surfaced for review</li>
+            <li>Not hardcoded to vital signs or labs — works across any item or section</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Reference Enrichment &amp; Mapping</h3>
+          <ul>
+            <li>Static CDISC/CDASH library for canonical domains and SAS field names</li>
+            <li>Dynamic Annotated CRF library learned from uploaded reference PDFs</li>
+            <li>Versioned LearnedTemplates with provenance tracking and rollback</li>
+            <li>Priority resolution when static templates, CRFs, and LLM output conflict</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Validation, Review &amp; Export</h3>
+          <ul>
+            <li>Rule-based validation engine with ERROR / WARNING / INFO findings</li>
+            <li>Export gated by validation status, unresolved review, and confidence thresholds</li>
+            <li>Multi-format export: JSON, CSV, Excel, ODM XML, Annotated CRF HTML</li>
+            <li>Immutable study revisions with snapshot creation, comparison, and revert</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Collaboration &amp; Access Control</h3>
+          <ul>
+            <li>Study-level collaborator roles: viewer, reviewer, editor, admin, owner</li>
+            <li>Centralized permission enforcement via reusable access-control helpers</li>
+            <li>404-not-403 pattern prevents leaking existence of unshared studies</li>
+            <li>Full audit trail of uploads, extractions, reviews, and exports</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Architecture</h2>
+      <p>
+        The backend is an async FastAPI application with SQLAlchemy 2.0 + Alembic on PostgreSQL, orchestrated by Celery for long-running extraction jobs. The React + TypeScript frontend uses Vite, TailwindCSS, and Zustand, with shared UI primitives across every view.
+      </p>
+      <ul>
+        <li><strong>Backend:</strong> FastAPI, SQLAlchemy 2.0, Alembic, async psycopg, Pydantic 2, pytest</li>
+        <li><strong>Frontend:</strong> React 18, TypeScript 5.4, Vite 5.3, TailwindCSS 3.4, Zustand, React Router 6</li>
+        <li><strong>AI/LLM:</strong> OpenAI / Groq / Gemini / Ollama with unified rate limiter and fallback chain</li>
+        <li><strong>PDF Parsing:</strong> PyMuPDF + pdfplumber, optional Azure Document Intelligence</li>
+        <li><strong>Export:</strong> openpyxl (Excel), stdlib csv/json/xml</li>
+        <li><strong>Testing:</strong> 1,200+ backend tests, Vitest + Testing Library frontend tests</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Tech Stack</h2>
+      <div class="tech-stack">
+        <span class="tag">Python 3.12</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">SQLAlchemy 2.0</span>
+        <span class="tag">Alembic</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">Celery</span>
+        <span class="tag">Redis</span>
+        <span class="tag">React 18</span>
+        <span class="tag">TypeScript 5.4</span>
+        <span class="tag">Vite 5.3</span>
+        <span class="tag">TailwindCSS 3.4</span>
+        <span class="tag">Zustand</span>
+        <span class="tag">OpenAI / Groq / Gemini / Ollama</span>
+        <span class="tag">PyMuPDF</span>
+        <span class="tag">pdfplumber</span>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Screenshots</h2>
+      <div class="project-gallery">
+        <figure class="project-gallery__item">
+          <img src="../../pictures/protocol-compiler/placeholder.svg" alt="Protocol Compiler dashboard placeholder showing the study upload and review workflow" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Dashboard — upload, review queue, and recent studies</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Challenges &amp; Solutions</h2>
+      <ul>
+        <li><strong>Hallucination in LLM outputs:</strong> Critical entities receive confidence scores and source-grounding checks. Anything fabricated or low-confidence is routed to human review before export, and export is blocked until resolved.</li>
+        <li><strong>Variable provider quotas and failures:</strong> A centralized rate limiter with per-provider RPM buckets, daily caps, and retry logic ensures one exhausted provider does not kill a run; failover chains fall back through remote and local models.</li>
+        <li><strong>Study-specific conventions:</strong> Static CDISC templates alone cannot capture sponsor patterns. Annotated CRF upload and LearnedTemplate versioning let the system absorb approved study designs and reuse them safely.</li>
+        <li><strong>Complex PDF layouts:</strong> Multi-column pages, headers/footers, and scanned image pages required layered parsing: reading-order heuristics, table extraction, and optional OCR, all feeding the same downstream extractor.</li>
+        <li><strong>Shared workspace security:</strong> Centralized access-control helpers enforce study-level roles, while 404 responses for unauthorized requests prevent information leakage.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Outcomes &amp; Impact</h2>
+      <ul>
+        <li>Turns protocol PDF review from days of manual reading into a structured first draft in minutes.</li>
+        <li>Reduces missed ranges, thresholds, and eligibility criteria through deterministic constraint extraction.</li>
+        <li>Enforces consistent CDISC/CDASH conventions across exported study designs.</li>
+        <li>Provides an auditable, versioned path from raw protocol → reviewed design → export artifact.</li>
+        <li>Supports safe self-learning: approved corrections become reusable templates without retraining models.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Lessons Learned</h2>
+      <ul>
+        <li>Multi-pass, focused prompts are far more reliable than asking a single LLM call to produce an entire study design.</li>
+        <li>Every AI-extracted entity needs source evidence; without it, reviewers cannot trust or efficiently verify the output.</li>
+        <li>Deterministic constraint extraction complements LLM extraction by catching numeric patterns the model may paraphrase incorrectly.</li>
+        <li>Export gating and revision snapshots are essential in regulated workflows where artifacts must be defensible.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Future Improvements</h2>
+      <ul>
+        <li>Diff viewer comparing any two study revisions side-by-side.</li>
+        <li>Study-template cloning to bootstrap new protocols from similar historical designs.</li>
+        <li>Live collaboration cursors and review comments in the study workspace.</li>
+        <li>Regulatory-submission-ready annotated CRF generation with sponsor branding.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p>&copy; <span data-year>2025</span> Vinh Chieu Truong. All rights reserved.</p>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="https://www.linkedin.com/in/vinh-truong-224b93279/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/vctruong100" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:vctruong100@gmail.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/script.js" defer></script>
+</body>
+</html>

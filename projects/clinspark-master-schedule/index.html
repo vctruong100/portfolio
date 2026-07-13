@@ -81,10 +81,10 @@
       <div class="project-hero__meta">
         <span>Role: Solo Developer</span>
         <span>Timeline: 2025–Present</span>
-        <span>Platform: Web (Cloudflare Pages + Render)</span>
+        <span>Platform: Web (Netlify + Render + Neon)</span>
       </div>
       <p class="project-hero__summary">
-        A production-deployed, full-stack scheduling web application built for clinical trial coordinators. It centralizes study milestone tracking, provides a Gantt chart view across all active studies, enables real-time multi-user presence awareness, and enforces role-based access — replacing a fragmented collection of spreadsheets with a single, purpose-built tool.
+        A full-stack clinical trial master schedule (v2.1.0) built for coordinators to track study milestones in one place. It offers five views — Dashboard, Table, Calendar, Gantt, and Workload — with real-time presence, inline editing, color-coded date chips, workload analytics, and a complete audit trail, replacing a fragmented collection of spreadsheets.
       </p>
       <div class="project-hero__actions">
         <a href="https://clinspark-master-schedule.pages.dev" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Live Demo</a>
@@ -116,7 +116,7 @@
             <li>7 milestone rows per study: Screening, Admission, Dosing, Change Log, UAT, Build Test, Procedure Log</li>
             <li>Per-milestone: date, status, priority, assignee, and notes fields</li>
             <li>Archive and restore studies to keep the active view focused</li>
-            <li>Inline editing with optimistic UI and conflict detection</li>
+            <li>Inline editing with DD-MMM-YYYY date auto-formatting and visual save feedback</li>
           </ul>
         </div>
         <div class="detail-card">
@@ -133,21 +133,20 @@
           <h3 class="detail-card__title">Real-Time Presence</h3>
           <ul>
             <li>Heartbeat polling tracks which users are currently active</li>
-            <li>Per-study edit locks prevent simultaneous overwrites</li>
             <li>Active users bar shows who is online across the entire platform</li>
-            <li>Session-level lock claiming with automatic expiry on disconnect</li>
-            <li>Presence state updates broadcast on heartbeat intervals</li>
+            <li>Presence state expires automatically when heartbeats stop</li>
+            <li>30-second polling keeps the UI current without WebSocket infrastructure</li>
           </ul>
         </div>
         <div class="detail-card">
           <h3 class="detail-card__title">Security &amp; Access Control</h3>
           <ul>
-            <li>JWT authentication stored in HttpOnly cookies — no token exposure in JavaScript</li>
+            <li>JWT authentication with access and refresh tokens, PBKDF2-SHA256 password hashing</li>
             <li>JTI-based session revocation: logout immediately invalidates the session server-side</li>
             <li>Refresh token rotation on every renewal cycle</li>
-            <li>Brute-force rate limiting on login (per IP, per username, per IP+username)</li>
-            <li>Role-based access: Admin can manage users; Staff can view and edit studies</li>
-            <li>Full security headers on every response (CSP-ready, X-Frame-Options, HSTS)</li>
+            <li>Brute-force rate limiting on login (5 attempts / 5 min)</li>
+            <li>Admin panel for user CRUD, role assignment, and password reset</li>
+            <li>Forward-only schema migrations applied automatically on backend startup</li>
           </ul>
         </div>
         <div class="detail-card">
@@ -162,11 +161,12 @@
         <div class="detail-card">
           <h3 class="detail-card__title">User Experience</h3>
           <ul>
-            <li>Favorites system: pin frequently accessed studies to the top</li>
-            <li>Persistent dark/light mode toggle per user</li>
+            <li>Five coordinated views: Dashboard, Table, Calendar, Gantt, and Workload</li>
+            <li>Dashboard color-coded chips: red (≤14 days), yellow (≤30 days), green (>30 days), gray (past/no date)</li>
+            <li>Workload bar chart + line graph with milestone-name filter</li>
+            <li>Always-editable milestone table with DD-MMM-YYYY date auto-formatting</li>
+            <li>Account settings for self-service username and password changes</li>
             <li>Responsive layout that works on tablets and wide monitors</li>
-            <li>Debounced inline save with visual feedback on each cell</li>
-            <li>Column sort and archive filter on the main table view</li>
           </ul>
         </div>
       </div>
@@ -175,14 +175,14 @@
     <section class="project-section container">
       <h2 class="project-section__title">Architecture</h2>
       <p>
-        The application follows a clean separation between a React SPA frontend and a Python FastAPI backend, communicating over a REST API with JSON. PostgreSQL handles all persistent state. The frontend is served as a static site from Cloudflare Pages; the backend runs on Render's managed container platform.
+        The application follows a clean separation between a React SPA frontend and a Python FastAPI backend, communicating over a REST API with JSON. Neon serverless PostgreSQL handles all persistent state. The frontend is served as a static site from Netlify; the backend runs on Render's managed container platform.
       </p>
       <ul>
-        <li><strong>Frontend:</strong> React 18, TypeScript, TailwindCSS, Zustand (state), Axios (HTTP), Recharts (Gantt)</li>
-        <li><strong>Backend:</strong> Python, FastAPI, psycopg (async PostgreSQL driver), python-jose (JWT), PBKDF2-SHA256 (passwords)</li>
-        <li><strong>Database:</strong> PostgreSQL with versioned migrations applied at startup</li>
-        <li><strong>Deployment:</strong> Cloudflare Pages (frontend) + Render (backend API)</li>
-        <li><strong>Cross-origin auth:</strong> SameSite=None; Secure cookies with CORS credentials enabled</li>
+        <li><strong>Frontend:</strong> React 18, TypeScript, Vite, TailwindCSS, Zustand (state), React Router v6, Axios (HTTP)</li>
+        <li><strong>Backend:</strong> Python 3.11+, FastAPI, async psycopg (v3), Pydantic v2, python-jose (JWT), PBKDF2-SHA256 (passwords)</li>
+        <li><strong>Database:</strong> PostgreSQL 15+ (Neon serverless) with forward-only migrations applied at startup</li>
+        <li><strong>Deployment:</strong> Netlify (frontend) + Render (backend API)</li>
+        <li><strong>Cross-origin auth:</strong> JWT access and refresh tokens shared across Netlify and Render origins</li>
       </ul>
     </section>
 
@@ -198,9 +198,11 @@
         <span class="tag">PostgreSQL</span>
         <span class="tag">psycopg (async)</span>
         <span class="tag">JWT / HttpOnly Cookies</span>
-        <span class="tag">Cloudflare Pages</span>
+        <span class="tag">Netlify</span>
         <span class="tag">Render</span>
+        <span class="tag">Neon</span>
         <span class="tag">Axios</span>
+        <span class="tag">Vite</span>
       </div>
     </section>
 
@@ -229,11 +231,11 @@
     <section class="project-section container">
       <h2 class="project-section__title">Challenges &amp; Solutions</h2>
       <ul>
-        <li><strong>Cross-origin cookie authentication:</strong> The frontend (Cloudflare Pages) and backend (Render) sit on different top-level domains, which blocks SameSite=Lax cookies in cross-site XHR. The solution required <code>SameSite=None; Secure=true</code> cookies paired with CORS credentials — with clear environment-variable-driven configuration so local development still uses permissive defaults.</li>
-        <li><strong>Edit conflict prevention:</strong> Multiple coordinators working simultaneously could overwrite each other's changes. I implemented a server-side session-locking model: the first user to open a study's edit row claims a lock (stored in the database with an expiry); subsequent users see the lock owner and cannot edit until it's released or times out.</li>
-        <li><strong>Session revocation at logout:</strong> Standard JWTs are stateless and can't be revoked before expiry. I introduced a <code>sessions</code> table keyed by JTI. Every authenticated request checks the JTI against this table; logout deletes the row, immediately invalidating the token without waiting for expiry.</li>
-        <li><strong>Versioned database migrations:</strong> Schema changes needed to apply automatically on each deploy without requiring manual intervention. I wrote a lightweight migration runner that compares the current schema version against ordered SQL files and applies only the delta.</li>
-        <li><strong>Change-awareness across users:</strong> When one user saves changes, other users should be notified without a full page reload. A polling endpoint (<code>/studies/changes</code>) returns a counter and "last changed by" field; the frontend polls every 30 seconds and shows a dismissible banner when a change is detected.</li>
+        <li><strong>Cross-origin auth with Netlify and Render:</strong> The frontend and backend run on different domains, so cookie and CORS settings must be explicit. I configured secure, SameSite-aware token handling and environment-driven CORS origins so development and production behave consistently.</li>
+        <li><strong>Session revocation at logout:</strong> Standard JWTs are stateless and can't be revoked before expiry. I introduced a sessions table keyed by JTI. Every authenticated request checks the JTI; logout deletes the row, immediately invalidating the token without waiting for expiry.</li>
+        <li><strong>Forward-only database migrations:</strong> Schema changes apply automatically on each backend startup. I used a lightweight migration runner that records the current schema version and applies ordered SQL deltas, making deploys safe and reversible only through new migrations.</li>
+        <li><strong>Real-time presence without WebSockets:</strong> A heartbeat endpoint and 30-second polling keep the active-users bar current without adding infrastructure. Presence state is lightweight and expires automatically when heartbeats stop.</li>
+        <li><strong>Audit log retention:</strong> Audit records accumulate quickly. I added a 60-day auto-purge on startup so the log table stays bounded while keeping the most recent history available.</li>
       </ul>
     </section>
 
@@ -241,7 +243,7 @@
       <h2 class="project-section__title">Outcomes &amp; Impact</h2>
       <ul>
         <li>Replaced disconnected Excel spreadsheets with a single source of truth accessible to the entire team from any device.</li>
-        <li>Edit conflicts eliminated through server-side locking — no more lost changes.</li>
+        <li>Always-editable milestone table lets any authorized user update data without blocking, while the audit trail captures exactly who changed what.</li>
         <li>Schedule exports that previously took 30–60 minutes of manual formatting now take one click.</li>
         <li>Full audit trail allows supervisors to review who changed what and when — a compliance requirement in clinical research environments.</li>
         <li>Deployed and in active use by the clinical operations team.</li>
