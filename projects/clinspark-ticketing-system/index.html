@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>!function(){var t=localStorage.getItem("theme");if("dark"===t||"light"===t)document.documentElement.setAttribute("data-theme",t)}();</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://vctruong100.github.io/portfolio/projects/clinspark-ticketing-system/">
+  <title>ClinSpark Ticketing System — Vinh Truong</title>
+  <meta name="description" content="A Microsoft Power Automate ticketing system that turns Microsoft Forms submissions into tracked Planner tasks with email notifications and Excel reporting.">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="ClinSpark Ticketing System — Case Study">
+  <meta property="og:description" content="Power Automate-driven ticketing workflow connecting Microsoft Forms, Planner, Outlook, and Excel for company-wide request tracking.">
+  <meta property="og:image" content="https://vctruong100.github.io/portfolio/assets/images/project-clinspark-ticketing-thumb.jpg">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "ClinSpark Ticketing System",
+    "description": "A Microsoft Power Automate ticketing system that turns Microsoft Forms submissions into tracked Planner tasks with email notifications and Excel reporting.",
+    "programmingLanguage": ["Power Automate"],
+    "author": {
+      "@type": "Person",
+      "name": "Vinh Chieu Truong"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="../../index.html" class="site-logo" aria-label="Vinh Truong — Home">VT</a>
+      <nav aria-label="Primary navigation">
+        <noscript>
+          <style>.nav-toggle { display: none !important; } .nav-list { position: static !important; transform: none !important; flex-direction: row !important; flex-wrap: wrap !important; box-shadow: none !important; border: none !important; padding: 0 !important; }</style>
+        </noscript>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="primary-nav" class="nav-list" role="list">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../index.html#projects">Projects</a></li>
+          <li><a href="../../index.html#skills">Skills</a></li>
+          <li><a href="../../index.html#about">About</a></li>
+          <li><a href="../../index.html#contact">Contact</a></li>
+          <li><a href="../../resume.html">Resume</a></li>
+          <li>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+              <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../index.html#projects">Projects</a></li>
+        <li><span aria-current="page">ClinSpark Ticketing System</span></li>
+      </ol>
+    </nav>
+
+    <section class="project-hero container">
+      <h1 class="project-hero__title">ClinSpark Ticketing System</h1>
+      <div class="project-hero__meta">
+        <span>Role: Solo Developer</span>
+        <span>Timeline: 2026–Present</span>
+        <span>Platform: Microsoft 365 / Power Automate</span>
+      </div>
+      <p class="project-hero__summary">
+        A no-code/low-code ticketing workflow built in Microsoft Power Automate. It turns Microsoft Forms submissions into tracked Planner tasks, sends email notifications to stakeholders, and logs every request in Excel so the clinical operations team has a single source of truth for inbound requests. The system was approved and adopted company-wide.
+      </p>
+      <div class="project-hero__actions">
+        <a href="#" class="btn btn--primary" aria-disabled="true">Internal Tool (No Public Demo)</a>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">The Problem</h2>
+      <p>
+        Internal requests for the ClinSpark platform were arriving through scattered channels — email, chat messages, and direct conversations — making it hard to track who asked for what, when, and whether anything had been done:
+      </p>
+      <ul>
+        <li>No centralized intake form; request details were often incomplete.</li>
+        <li>Requests could be forgotten or buried in inboxes.</li>
+        <li>There was no shared view of open, in-progress, or completed work.</li>
+        <li>Stakeholders had no visibility into status without sending follow-up messages.</li>
+        <li>Reporting on workload or turnaround time required manual aggregation.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Solution Overview</h2>
+      <div class="detail-grid">
+        <div class="detail-card">
+          <h3 class="detail-card__title">Request Intake (Microsoft Forms)</h3>
+          <ul>
+            <li>Standardized form captures request type, priority, description, requester, and CRC/builder contacts</li>
+            <li>Required fields prevent incomplete submissions</li>
+            <li>Form responses feed directly into Power Automate for real-time processing</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Task Routing (Microsoft Planner)</h3>
+          <ul>
+            <li>Each approved submission creates a Planner task with title, description, and priority</li>
+            <li>Tasks are assigned to the appropriate builder or CRC based on form input</li>
+            <li>Planner buckets reflect request status (New, In Progress, Completed)</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Email Notifications (Office 365 Outlook)</h3>
+          <ul>
+            <li>Submission confirmation sent to the requester with the generated ticket ID</li>
+            <li>Builder/CRC notification includes direct links to the task and request details</li>
+            <li>Completion notification automatically sent when a Planner task is marked done</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Excel Log &amp; Reporting</h3>
+          <ul>
+            <li>Every form response is appended to an Excel Online workbook for historical tracking</li>
+            <li>Refresh flow keeps summary tables and pivot-friendly data current</li>
+            <li>Status and completion dates are synced back from Planner</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Data Normalization</h3>
+          <ul>
+            <li>Semicolon-separated contact lists are trimmed, lower-cased, and de-duplicated</li>
+            <li>Blank entries are filtered out before sending notifications</li>
+            <li>Priority strings are normalized so Planner labels are consistent</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3 class="detail-card__title">Loop &amp; Sync Flows</h3>
+          <ul>
+            <li>Scheduled flow iterates through Planner tasks to update the Excel tracker</li>
+            <li>Completion flow triggers when a task is finished and notifies the requester</li>
+            <li>Flows share connection references and a common naming convention for maintainability</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Workflow</h2>
+      <ol>
+        <li><strong>Intake:</strong> A user submits the Microsoft Form.</li>
+        <li><strong>Validation &amp; parse:</strong> Power Automate extracts fields, normalizes contact strings, and assigns a ticket ID.</li>
+        <li><strong>Task creation:</strong> A Planner task is created with the parsed details and assigned owner.</li>
+        <li><strong>Notifications:</strong> Confirmation email goes to the requester; task email goes to the assigned builder/CRC.</li>
+        <li><strong>Logging:</strong> The request is appended to the Excel tracker.</li>
+        <li><strong>Completion:</strong> When the task is marked complete, a final notification is sent and the Excel log is updated.</li>
+      </ol>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Tech Stack</h2>
+      <div class="tech-stack">
+        <span class="tag">Microsoft Power Automate</span>
+        <span class="tag">Microsoft Forms</span>
+        <span class="tag">Microsoft Planner</span>
+        <span class="tag">Office 365 Outlook</span>
+        <span class="tag">Excel Online</span>
+        <span class="tag">SharePoint Online</span>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Screenshots</h2>
+      <div class="project-gallery">
+        <figure class="project-gallery__item">
+          <img src="../../pictures/clinspark-ticketing-system/placeholder.svg" alt="Placeholder diagram showing the Power Automate flow from Microsoft Forms to Planner, Outlook, and Excel" width="1200" height="675" loading="lazy">
+          <figcaption class="project-gallery__caption">Flow overview — Forms intake, Planner task creation, Outlook notifications, and Excel logging</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Challenges &amp; Solutions</h2>
+      <ul>
+        <li><strong>Inconsistent contact lists:</strong> Form submitters entered multiple CRC or builder emails in free text with inconsistent separators. I added a normalization step that lower-cases, trims, splits on semicolons, removes blanks, and rejoins the list before sending.</li>
+        <li><strong>Duplicate notifications:</strong> Early versions sent emails to every address even when some were blank. A filter array step now removes empty entries before the send action runs.</li>
+        <li><strong>Status sync between Planner and Excel:</strong> Manual updates in Planner were not reflected in the log. A scheduled sync flow loops through tasks and writes the latest status and completion date back to Excel.</li>
+        <li><strong>Maintainability across five flows:</strong> Each flow handles a distinct part of the lifecycle. I kept naming consistent, shared connection references where possible, and exported each flow into source control so changes are traceable.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Outcomes &amp; Impact</h2>
+      <ul>
+        <li>Replaced scattered email/chat requests with a single, standardized intake process.</li>
+        <li>Every request now has a ticket ID, an assignee, and a visible status in Planner.</li>
+        <li>Stakeholders receive automatic confirmation and completion emails without manual follow-up.</li>
+        <li>Excel tracker gives supervisors a quick view of volume, priority distribution, and completion trends.</li>
+        <li>Approved and adopted company-wide by the clinical operations team.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Lessons Learned</h2>
+      <ul>
+        <li>Even no-code workflows need defensive data cleaning — never trust free-text email fields.</li>
+        <li>Users adopt the tool faster when they get immediate confirmation that their request was received.</li>
+        <li>Logging every request to Excel from day one makes future reporting and auditing much easier.</li>
+        <li>Source-controlling exported Power Automate flows makes it possible to review changes and roll back.</li>
+      </ul>
+    </section>
+
+    <section class="project-section container">
+      <h2 class="project-section__title">Future Improvements</h2>
+      <ul>
+        <li>Add an approvals step for high-priority or cross-team requests before creating the Planner task.</li>
+        <li>Build a Power BI dashboard on top of the Excel tracker for richer analytics.</li>
+        <li>Integrate Teams adaptive cards for status updates directly in the operations channel.</li>
+        <li>Add SLA tracking with due-date reminders based on request priority.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p>&copy; <span data-year>2025</span> Vinh Chieu Truong. All rights reserved.</p>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="https://www.linkedin.com/in/vinh-truong-224b93279/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/vctruong100" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:vctruong100@gmail.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/script.js" defer></script>
+</body>
+</html>
